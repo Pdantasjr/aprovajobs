@@ -25719,8 +25719,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "render": () => (/* binding */ render)
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
-/* harmony import */ var _Images_logotype_logotipo_aprova_jobs_dark_mode_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Images/logotype/logotipo-aprova-jobs-dark-mode.svg */ "./resources/js/Pages/Front/Images/logotype/logotipo-aprova-jobs-dark-mode.svg");
-
 
 var _hoisted_1 = {
   "class": "flex flex-col w-screen h-auto"
@@ -25729,21 +25727,13 @@ var _hoisted_2 = {
   "class": "flex items-center justify-center w-11/12 w-max-7xl mx-auto h-auto mt-32 mb-32"
 };
 var _hoisted_3 = ["src"];
-
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  src: _Images_logotype_logotipo_aprova_jobs_dark_mode_svg__WEBPACK_IMPORTED_MODULE_1__["default"],
-  alt: "logotipo AprovaJobs"
-}, null, -1
-/* HOISTED */
-);
-
-var _hoisted_5 = {
+var _hoisted_4 = {
   "class": "flex flex-col items-center w-11/12 mx-auto"
 };
 
-var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Fazer login");
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Fazer login");
 
-var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cadastrar-se");
+var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cadastrar-se");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_AppButton = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("AppButton");
@@ -25755,9 +25745,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     alt: "logotipo AprovaJobs"
   }, null, 8
   /* PROPS */
-  , _hoisted_3), _hoisted_4]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppButton, null, {
+  , _hoisted_3)]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppButton, null, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_6];
+      return [_hoisted_5];
     }),
     _: 1
     /* STABLE */
@@ -25767,7 +25757,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "text-dark/30 dark:text-light/30 my-4 hover:underline dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_7];
+      return [_hoisted_6];
     }),
     _: 1
     /* STABLE */
@@ -28393,21 +28383,6 @@ var deepmerge_1 = deepmerge;
 
 module.exports = deepmerge_1;
 
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Front/Images/logotype/logotipo-aprova-jobs-dark-mode.svg":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/Pages/Front/Images/logotype/logotipo-aprova-jobs-dark-mode.svg ***!
-  \*************************************************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/logotipo-aprova-jobs-dark-mode.svg?40e48d5bd13d9de9192d0646300d877b");
 
 /***/ }),
 

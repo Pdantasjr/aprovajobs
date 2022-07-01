@@ -3,7 +3,6 @@
         <!--LOGOTIPO-->
         <div class="flex items-center justify-center w-11/12 w-max-7xl mx-auto h-auto mt-32 mb-32">
             <img :src="logotypeMode" alt="logotipo AprovaJobs">
-            <img src="./Images/logotype/logotipo-aprova-jobs-dark-mode.svg" alt="logotipo AprovaJobs">
         </div>
 
         <div class="flex flex-col items-center w-11/12 mx-auto">
