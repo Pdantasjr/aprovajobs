@@ -1,6 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
+    darkMode: 'media',
     content: [
         './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './vendor/laravel/jetstream/**/*.blade.php',
@@ -8,7 +9,6 @@ module.exports = {
         './resources/views/**/*.blade.php',
         './resources/js/**/*.vue',
     ],
-
     theme: {
         screens: {
             'xs': '320px',
@@ -30,6 +30,10 @@ module.exports = {
             // => @media (min-width: 1536px) { ... }
         },
         extend: {
+            backgroundImage: {
+                'logotype-light': "url('./Images/logotype/logotipo-aprova-jobs-dark-light.svg')",
+                'logotype-dark': "url('./Images/logotype/logotipo-aprova-jobs-dark-mode.svg')",
+            },
             fontFamily: {
                 sans: ['Poppins', ...defaultTheme.fontFamily.sans],
             },
