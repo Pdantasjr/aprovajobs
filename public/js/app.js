@@ -24651,7 +24651,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   }, null, 8
   /* PROPS */
   , ["modelValue"]), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppLabel, {
-    value: "password",
+    value: "Password",
     required: ""
   }), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppInput, {
     label: "Senha",
@@ -26076,7 +26076,7 @@ __webpack_require__.r(__webpack_exports__);
 var _hoisted_1 = {
   key: 0,
   xmlns: "http://www.w3.org/2000/svg",
-  "class": "h-6 w-6 dark:text-light text-dark",
+  "class": "h-6 w-6 text-light",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "currentColor",
@@ -26114,7 +26114,7 @@ var _hoisted_6 = [_hoisted_5];
 var _hoisted_7 = {
   key: 2,
   xmlns: "http://www.w3.org/2000/svg",
-  "class": "h-5 w-5 dark:text-light text-dark",
+  "class": "h-5 w-5 text-light",
   fill: "none",
   viewBox: "0 0 18 15",
   stroke: "currentColor",
@@ -26135,7 +26135,7 @@ var _hoisted_9 = [_hoisted_8];
 var _hoisted_10 = {
   key: 3,
   xmlns: "http://www.w3.org/2000/svg",
-  "class": "h-6 w-6",
+  "class": "h-6 w-6 text-light",
   fill: "none",
   viewBox: "0 0 24 24",
   stroke: "currentColor",
@@ -26178,7 +26178,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "onUpdate:modelValue": _cache[0] || (_cache[0] = function ($event) {
       return _ctx.proxyChecked = $event;
     }),
-    "class": "rounded border-light/30 text-primary focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 hover:cursor-pointer"
+    "class": "rounded dark:border-light/30 border-dark/30 text-primary focus:border-primary focus:ring focus:ring-primary focus:ring-opacity-50 hover:cursor-pointer"
   }, null, 8
   /* PROPS */
   , _hoisted_1)), [[vue__WEBPACK_IMPORTED_MODULE_0__.vModelCheckbox, _ctx.proxyChecked]]);
@@ -26308,18 +26308,31 @@ var _hoisted_2 = {
   "class": "flex flex-col items-center w-11/12 mx-auto"
 };
 
-var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
+var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  "class": "h-6 w-6 text-light",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  stroke: "currentColor",
+  "stroke-width": "2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  d: "M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+})], -1
+/* HOISTED */
+);
+
+var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("span", {
   "class": "mx-2 text-light"
 }, "Fazer login", -1
 /* HOISTED */
 );
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cadastrar-se");
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cadastrar-se");
 
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_Header = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Header");
-
-  var _component_AppIcons = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("AppIcons");
 
   var _component_Link = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("Link");
 
@@ -26328,9 +26341,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "bg-primary w-full flex justify-center items-center sm:w-48 h-12 py-1 px-2 m-2 rounded-full hover:cursor-pointer transition hover:scale-105 duration-200 ease-in-out"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_AppIcons, {
-        name: "login"
-      }), _hoisted_3];
+      return [_hoisted_3, _hoisted_4];
     }),
     _: 1
     /* STABLE */
@@ -26342,7 +26353,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "class": "text-dark/30 dark:text-light/30 my-4 hover:underline dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
-      return [_hoisted_4];
+      return [_hoisted_5];
     }),
     _: 1
     /* STABLE */
@@ -28809,7 +28820,7 @@ var appName = ((_window$document$getE = window.document.getElementsByTagName('ti
   }
 });
 _inertiajs_progress__WEBPACK_IMPORTED_MODULE_2__.InertiaProgress.init({
-  color: '#4B5563'
+  color: '#10B981'
 });
 
 /***/ }),

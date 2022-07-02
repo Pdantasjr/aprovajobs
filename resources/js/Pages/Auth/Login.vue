@@ -17,7 +17,7 @@
         <form @submit.prevent="submit">
             <AppLabel value="E-mail" required/>
             <AppInput label="E-mail" type="email" name="email" v-model="form.email" required autofocus/>
-            <AppLabel value="password" required/>
+            <AppLabel value="Password" required/>
             <AppInput label="Senha" type="password" name="password" v-model="form.password" required/>
             <AppLabel class="flex items-center">
                 <AppCheckbox name="remember" v-model:checked="form.remember"/>
