@@ -20,4 +20,11 @@ class Front extends Controller
             'storageUrl' => asset('storage/')
         ]);
     }
+
+    public function register()
+    {
+        return Inertia::render('Front/Register', [
+            'storageUrl' => asset('storage/')
+        ]);
+    }
 }
