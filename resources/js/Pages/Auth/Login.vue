@@ -1,13 +1,13 @@
 <template>
     <Head title="Login"/>
     <Header/>
-    <div class="flex items-center w-11/12 lg:w-screen max-w-4xl h-auto mt-48 mx-auto">
+    <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mt-48 mx-auto">
         <Link :href="route('front.index')">
             <AppIcons name="return"/>
         </Link>
         <AppTitle title="Login"/>
     </div>
-    <div class="flex justify-center flex-col w-11/12 lg:w-screen max-w-4xl h-auto mt-6 mx-auto">
+    <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
         <transition>
             <AppValidationErrors class="mb-4"/>
         </transition>
@@ -16,9 +16,9 @@
         </div>
         <form @submit.prevent="submit">
             <AppLabel value="E-mail" required/>
-            <AppInput label="E-mail" type="email" name="email" v-model="form.email"/>
+            <AppInput label="E-mail" type="email" name="email" v-model="form.email" required autofocus/>
             <AppLabel value="password" required/>
-            <AppInput label="Senha" type="password" name="password" v-model="form.password"/>
+            <AppInput label="Senha" type="password" name="password" v-model="form.password" required/>
             <AppLabel class="flex items-center">
                 <AppCheckbox name="remember" v-model:checked="form.remember"/>
                 <span class="ml-2 text-sm text-gray-600">Lembrar de mim</span>

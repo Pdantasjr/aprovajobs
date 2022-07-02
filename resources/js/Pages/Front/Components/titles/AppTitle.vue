@@ -1,6 +1,6 @@
 <template>
     <div class="flex justify-center items-center">
-        <h1 class="text-4xl text-dark dark:text-light font-semibold m-2">{{ title }}</h1>
+        <h1 class="text-2xl sm:text-4xl text-dark dark:text-light font-semibold m-2">{{ title }}</h1>
     </div>
 </template>
 

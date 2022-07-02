@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-center w-screen h-40 absolute inset-y-0 border-b dark:border-line-border border-line-border/30">
+    <div class="flex items-center justify-center w-full h-40 absolute inset-y-0 border-b dark:border-line-border border-line-border/30 ">
         <!--LOGOTIPO-->
         <Link :href="route('front.index')">
             <img v-if="this.darkMode" src="../Images/logotype/logotipo-aprova-jobs-dark-mode.svg"

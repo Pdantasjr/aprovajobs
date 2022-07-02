@@ -1,80 +1,61 @@
 <template>
-    <Head title="Register" />
-
-    <jet-authentication-card>
-        <template #logo>
-            <jet-authentication-card-logo />
-        </template>
-
-        <jet-validation-errors class="mb-4" />
-
+    <Head title="Registro" />
+    <Header/>
+    <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mt-48 mx-auto">
+        <Link :href="route('front.index')">
+            <AppIcons name="return"/>
+        </Link>
+        <AppTitle title="Cadastro"/>
+    </div>
+    <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
+        <transition>
+            <AppValidationErrors class="mb-4"/>
+        </transition>
         <form @submit.prevent="submit">
-            <div>
-                <jet-label for="name" value="Name" />
-                <jet-input id="name" type="text" class="mt-1 block w-full" v-model="form.name" required autofocus autocomplete="name" />
-            </div>
-
-            <div class="mt-4">
-                <jet-label for="email" value="Email" />
-                <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" required />
-            </div>
-
-            <div class="mt-4">
-                <jet-label for="password" value="Password" />
-                <jet-input id="password" type="password" class="mt-1 block w-full" v-model="form.password" required autocomplete="new-password" />
-            </div>
-
-            <div class="mt-4">
-                <jet-label for="password_confirmation" value="Confirm Password" />
-                <jet-input id="password_confirmation" type="password" class="mt-1 block w-full" v-model="form.password_confirmation" required autocomplete="new-password" />
-            </div>
-
-            <div class="mt-4" v-if="$page.props.jetstream.hasTermsAndPrivacyPolicyFeature">
-                <jet-label for="terms">
-                    <div class="flex items-center">
-                        <jet-checkbox name="terms" id="terms" v-model:checked="form.terms" />
-
-                        <div class="ml-2">
-                            I agree to the <a target="_blank" :href="route('terms.show')" class="underline text-sm text-gray-600 hover:text-gray-900">Terms of Service</a> and <a target="_blank" :href="route('policy.show')" class="underline text-sm text-gray-600 hover:text-gray-900">Privacy Policy</a>
-                        </div>
-                    </div>
-                </jet-label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <Link :href="route('login')" class="underline text-sm text-gray-600 hover:text-gray-900">
-                    Already registered?
+            <AppLabel value="Nome" required/>
+            <AppInput label="Nome" name="name" v-model="form.name" required autofocus/>
+            <AppLabel value="E-mail" required/>
+            <AppInput label="email" name="email" type="email" v-model="form.email" required />
+            <AppLabel value="Senha" required/>
+            <AppInput label="password" name="password" type="password" v-model="form.password" required />
+            <AppLabel value="Confirme sua senha:" required/>
+            <AppInput label="password_confirmation" name="password_confirmation" type="password" v-model="form.password_confirmation" required />
+            <div
+                class="flex flex-col sm:flex-row items-center justify-end w-full h-auto mx-auto my-12">
+                <Link :href="route('login')"
+                      class="sm:order-first order-last text-dark/30 dark:text-light/30 m-4 hover:underline dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out">
+                    Já tenho uma conta
                 </Link>
-
-                <jet-button class="ml-4" :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Register
-                </jet-button>
+                <AppButton>
+                    <AppIcons name="enter"/>
+                    <span class="mx-2">Registrar</span>
+                </AppButton>
             </div>
         </form>
-    </jet-authentication-card>
+    </div>
 </template>
 
 <script>
     import { defineComponent } from 'vue'
-    import JetAuthenticationCard from '@/Jetstream/AuthenticationCard.vue'
-    import JetAuthenticationCardLogo from '@/Jetstream/AuthenticationCardLogo.vue'
-    import JetButton from '@/Jetstream/Button.vue'
-    import JetInput from '@/Jetstream/Input.vue'
-    import JetCheckbox from '@/Jetstream/AppCheckbox.vue'
-    import JetLabel from '@/Jetstream/Label.vue'
-    import JetValidationErrors from '@/Jetstream/AppValidationErrors.vue'
     import { Head, Link } from '@inertiajs/inertia-vue3';
+    import Header from "../Front/Components/Header";
+    import AppTitle from "../Front/Components/titles/AppTitle";
+    import AppIcons from "../Front/Components/icons/AppIcons";
+    import AppValidationErrors from "../Front/Components/Validations/AppValidationErrors";
+    import AppLabel from "../Front/Components/inputs/AppLabel";
+    import AppInput from "../Front/Components/inputs/AppInput";
+    import AppButton from "../Front/Components/buttons/AppButton";
 
     export default defineComponent({
         components: {
             Head,
-            JetAuthenticationCard,
-            JetAuthenticationCardLogo,
-            JetButton,
-            JetInput,
-            JetCheckbox,
-            JetLabel,
-            JetValidationErrors,
+            Header,
+            AppTitle,
+            AppIcons,
+            AppValidationErrors,
+            AppLabel,
+            AppInput,
+            AppButton,
             Link,
         },
 
@@ -99,3 +80,14 @@
         }
     })
 </script>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+    transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+    opacity: 0;
+}
+</style>

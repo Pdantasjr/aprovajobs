@@ -5,7 +5,10 @@
             :name="name"
             @input="$emit('update:modelValue', $event.target.value)"
             class="h-12 sm:h-16 dark:bg-dark bg-light rounded-full transition duration-75 focus:border-primary focus:ring-1 active:outline-4 dark:text-light text-dark text-lg font-semibold px-8"
-            :type="type">
+            :type="type"
+            :required="required"
+            :autofocus="autofocus"
+        >
     </div>
 </template>
 
@@ -16,6 +19,14 @@ export default {
         label: {
             type: String,
             default: "[Label name]"
+        },
+        required: {
+            type: Boolean,
+            default: false,
+        },
+        autofocus: {
+            type: Boolean,
+            default: false,
         },
         type: {
             type: String,

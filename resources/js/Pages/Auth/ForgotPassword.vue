@@ -1,55 +1,57 @@
 <template>
     <Head title="Forgot Password" />
-
-    <jet-authentication-card>
-        <template #logo>
-            <jet-authentication-card-logo />
-        </template>
-
-        <div class="mb-4 text-sm text-gray-600">
-            Forgot your password? No problem. Just let us know your email address and we will email you a password reset link that will allow you to choose a new one.
-        </div>
-
-        <div v-if="status" class="mb-4 font-medium text-sm text-green-600">
+    <Header />
+    <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mt-48 mx-auto">
+        <Link :href="route('front.index')">
+            <AppIcons name="return"/>
+        </Link>
+        <AppTitle title="Recuperação de senha"/>
+    </div>
+    <div class="my-4 w-10/12 lg:w-full max-w-4xl h-auto mx-auto">
+        <p class="text-xs sm:text-sm text-dark/30 dark:text-light/30 text-justify">Esqueceu sua senha? Não se preocupe, digite seu e-mail aqui embaixo para receber um link de recuperação de senha no e-mail cadastrado no Aprova Jobs. Assim que receber, clique no link e digite sua nova senha, simples assim!</p>
+    </div>
+    <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
+        <div v-if="status" class="mb-4 font-medium text-sm text-warning">
             {{ status }}
         </div>
-
-        <jet-validation-errors class="mb-4" />
-
+        <transition>
+            <AppValidationErrors class="mb-4"/>
+        </transition>
         <form @submit.prevent="submit">
-            <div>
-                <jet-label for="email" value="Email" />
-                <jet-input id="email" type="email" class="mt-1 block w-full" v-model="form.email" required autofocus />
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                <jet-button :class="{ 'opacity-25': form.processing }" :disabled="form.processing">
-                    Email Password Reset Link
-                </jet-button>
+            <AppLabel value="E-mail" required/>
+            <AppInput label="E-mail" type="email" name="email" v-model="form.email" required autofocus/>
+            <div class="flex flex-col sm:flex-row items-center justify-end w-full h-auto mx-auto my-12">
+                <AppButton>
+                    <AppIcons name="recovery"/>
+                    <span class="mx-2">Recuperar senha</span>
+                </AppButton>
             </div>
         </form>
-    </jet-authentication-card>
+    </div>
 </template>
 
 <script>
     import { defineComponent } from 'vue'
-    import { Head } from '@inertiajs/inertia-vue3';
-    import JetAuthenticationCard from '@/Jetstream/AuthenticationCard.vue'
-    import JetAuthenticationCardLogo from '@/Jetstream/AuthenticationCardLogo.vue'
-    import JetButton from '@/Jetstream/Button.vue'
-    import JetInput from '@/Jetstream/Input.vue'
-    import JetLabel from '@/Jetstream/Label.vue'
-    import JetValidationErrors from '@/Jetstream/AppValidationErrors.vue'
+    import { Head, Link } from '@inertiajs/inertia-vue3';
+    import Header from "../Front/Components/Header";
+    import AppIcons from "../Front/Components/icons/AppIcons";
+    import AppTitle from "../Front/Components/titles/AppTitle";
+    import AppValidationErrors from "../Front/Components/Validations/AppValidationErrors";
+    import AppLabel from "../Front/Components/inputs/AppLabel";
+    import AppInput from "../Front/Components/inputs/AppInput";
+    import AppButton from "../Front/Components/buttons/AppButton";
 
     export default defineComponent({
         components: {
             Head,
-            JetAuthenticationCard,
-            JetAuthenticationCardLogo,
-            JetButton,
-            JetInput,
-            JetLabel,
-            JetValidationErrors
+            Link,
+            Header,
+            AppIcons,
+            AppTitle,
+            AppValidationErrors,
+            AppLabel,
+            AppInput,
+            AppButton,
         },
 
         props: {
