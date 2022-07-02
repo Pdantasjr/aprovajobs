@@ -1,7 +1,5 @@
 <template>
-    <div class="bg-primary w-screen py-3">
-        <h1>Footer</h1>
-    </div>
+<h1>Footer</h1>
 </template>
 
 <script>

@@ -41,6 +41,11 @@ module.exports = {
                 'primary': '#10B981',
                 'dark': '#27272A',
                 'light': '#F5F5F5',
+                'danger': '#F87171',
+                'warning': '#FFE07C',
+                'info': '#71BFF8',
+                'secondary': '#6FF4C8',
+                'line-border': '#999999',
             },
             animation: {
                 'float': 'float 4s ease-in-out infinite',

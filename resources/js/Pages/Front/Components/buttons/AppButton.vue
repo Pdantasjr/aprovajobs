@@ -1,14 +1,18 @@
 <template>
-    <button
+    <Link
+        :href="href"
         :class="baseClass"
-        class="w-full sm:w-48 h-12 py-1 px-2 m-2 rounded-full hover:cursor-pointer transition hover:scale-105 duration-200 ease-in-out"
+        class="w-full flex justify-center items-center sm:w-48 h-12 py-1 px-2 m-2 rounded-full hover:cursor-pointer transition hover:scale-105 duration-200 ease-in-out"
     >
         <slot />
-    </button>
+    </Link>
 </template>
 
 <script>
-export default {
+import {defineComponent} from 'vue'
+
+import {Link} from '@inertiajs/inertia-vue3';
+export default defineComponent({
     name: "button",
     props: {
         type: {
@@ -19,10 +23,16 @@ export default {
             type: String,
             default: "light"
         },
-    },
-    data () {
-        return {
+        href: {
+            type: String,
+            default: '#',
         }
+    },
+    components: {
+        Link,
+    },
+    data() {
+        return {}
     },
     computed: {
         baseClass() {
@@ -38,5 +48,5 @@ export default {
             return this.textColor ? `text-${this.textColor}` : ''
         }
     },
-}
+})
 </script>
