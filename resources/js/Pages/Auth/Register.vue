@@ -60,9 +60,9 @@
     import JetAuthenticationCardLogo from '@/Jetstream/AuthenticationCardLogo.vue'
     import JetButton from '@/Jetstream/Button.vue'
     import JetInput from '@/Jetstream/Input.vue'
-    import JetCheckbox from '@/Jetstream/Checkbox.vue'
+    import JetCheckbox from '@/Jetstream/AppCheckbox.vue'
     import JetLabel from '@/Jetstream/Label.vue'
-    import JetValidationErrors from '@/Jetstream/ValidationErrors.vue'
+    import JetValidationErrors from '@/Jetstream/AppValidationErrors.vue'
     import { Head, Link } from '@inertiajs/inertia-vue3';
 
     export default defineComponent({

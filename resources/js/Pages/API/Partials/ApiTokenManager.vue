@@ -173,7 +173,7 @@
     import JetDialogModal from '@/Jetstream/DialogModal.vue'
     import JetFormSection from '@/Jetstream/FormSection.vue'
     import JetInput from '@/Jetstream/Input.vue'
-    import JetCheckbox from '@/Jetstream/Checkbox.vue'
+    import JetCheckbox from '@/Jetstream/AppCheckbox.vue'
     import JetInputError from '@/Jetstream/InputError.vue'
     import JetLabel from '@/Jetstream/Label.vue'
     import JetSecondaryButton from '@/Jetstream/SecondaryButton.vue'

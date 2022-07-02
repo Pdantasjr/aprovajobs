@@ -29,12 +29,7 @@ export default defineComponent({
         Link,
         Header,
         AppButton,
-    },
-    data () {
-        return {
-            darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
-        }
-    },
+    }
 })
 
 </script>

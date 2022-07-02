@@ -16,9 +16,6 @@ import {Head, Link} from "@inertiajs/inertia-vue3";
 import ToggleDarkMode from "./buttons/ToggleDarkMode";
 export default {
     name: "Header",
-    props: {
-        darkMode: Boolean,
-    },
     components: {
         Head,
         Link,

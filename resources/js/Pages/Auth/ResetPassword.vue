@@ -41,7 +41,7 @@
     import JetButton from '@/Jetstream/Button.vue'
     import JetInput from '@/Jetstream/Input.vue'
     import JetLabel from '@/Jetstream/Label.vue'
-    import JetValidationErrors from '@/Jetstream/ValidationErrors.vue'
+    import JetValidationErrors from '@/Jetstream/AppValidationErrors.vue'
 
     export default defineComponent({
         components: {
