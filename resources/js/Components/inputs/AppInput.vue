@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col my-2">
         <input
-            :id="label"
+            :id="id"
             :name="name"
             @input="$emit('update:modelValue', $event.target.value)"
             class="h-12 sm:h-16 dark:bg-dark bg-light rounded-full transition duration-75 focus:border-primary focus:ring-1 active:outline-4 dark:text-light text-dark text-lg font-semibold px-8"
@@ -16,10 +16,7 @@
 export default {
     name: "AppInput",
     props: {
-        label: {
-            type: String,
-            default: "[Label name]"
-        },
+        id: String,
         required: {
             type: Boolean,
             default: false,

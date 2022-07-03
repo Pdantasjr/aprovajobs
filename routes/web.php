@@ -1,15 +1,21 @@
 <?php
 
+use App\Http\Controllers\Admin\JobsController;
 use App\Http\Controllers\Front;
 use Illuminate\Support\Facades\Route;
-use Inertia\Inertia;
 
+//FRONTEND
 Route::get('/', [Front::class, 'index'])->name('front.index');
-//Route::get('/login', [Front::class, 'login'])->name('login');
-//Route::get('/register', [Front::class, 'register'])->name('register');
-//Route::get('/logout', [Front::class, 'index'])->name('logout');
 
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->name('dashboard');
+//BACKEND
+Route::middleware(['auth:sanctum', 'verified'])->group(function () {
+    Route::prefix('admin')->group(function () {
+        Route::namespace('Admin')->group(function () {
+            Route::name('admin.jobs.')->group(function () {
+                Route::get('/dashboard', [JobsController::class, 'index'])->name('dashboard');
+                Route::get('/nova-demanda', [JobsController::class, 'create'])->name('create');
+                Route::post('/nova-demanda', [JobsController::class, 'store'])->name('store');
+            });
+        });
+    });
+});

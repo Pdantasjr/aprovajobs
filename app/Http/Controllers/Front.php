@@ -9,22 +9,6 @@ class Front extends Controller
 {
     public function index()
     {
-        return Inertia::render('Front/Index', [
-            'storageUrl' => asset('storage/')
-        ]);
-    }
-
-    public function login()
-    {
-        return Inertia::render('Front/Login', [
-            'storageUrl' => asset('storage/')
-        ]);
-    }
-
-    public function register()
-    {
-        return Inertia::render('Front/Register', [
-            'storageUrl' => asset('storage/')
-        ]);
+        return Inertia::render('Front/Index');
     }
 }
