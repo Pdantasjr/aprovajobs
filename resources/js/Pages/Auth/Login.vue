@@ -1,7 +1,6 @@
 <template>
     <Head title="Login"/>
-    <div class="flex flex-col h-screen justify-between">
-        <Header/>
+    <AppLayout>
         <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mt-48 mx-auto">
             <Link :href="route('front.index')">
                 <AppIcons name="return"/>
@@ -15,6 +14,7 @@
             <div v-if="status" class="mb-4 font-medium text-sm text-warning">
                 {{ status }}
             </div>
+
             <form @submit.prevent="submit">
                 <AppLabel text="E-mail" for-input="email" required/>
                 <AppInput id="email" type="email" name="email" v-model="form.email" required autofocus/>
@@ -40,13 +40,13 @@
                 </div>
             </form>
         </div>
-        <Footer />
-    </div>
+    </AppLayout>
 </template>
 
 <script>
 import {defineComponent} from 'vue'
 import {Head, Link} from '@inertiajs/inertia-vue3';
+import AppLayout from "../../Layouts/AppLayout";
 import Header from "../../Layouts/Header";
 import AppValidationErrors from "../../Components/Validations/AppValidationErrors";
 import AppTitle from "../../Components/titles/AppTitle";
@@ -60,6 +60,7 @@ import Footer from "../../Layouts/Footer";
 export default defineComponent({
     components: {
         AppTitle,
+        AppLayout,
         Header,
         AppValidationErrors,
         Head,
