@@ -1,14 +1,14 @@
 <template>
     <Head title="Dashboard"/>
-    <div class="flex flex-col h-screen justify-between">
-        <Header />
-        <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mt-48 mx-auto">
-            <Link :href="route('front.index')">
-                <AppIcons name="return"/>
-            </Link>
-            <AppTitle title="Dashboard"/>
-        </div>
-        <div class="flex w-11/12 lg:w-full max-w-4xl h-auto mx-auto">
+    <AppLayout>
+        <MainContent>
+            <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mx-auto">
+                <Link :href="route('front.index')">
+                    <AppIcons name="return"/>
+                </Link>
+                <AppTitle title="Dashboardd"/>
+            </div>
+            <div class="flex w-11/12 lg:w-full max-w-4xl h-auto mx-auto">
             <AppButton :style="'red-600'" @click="logout">
                 <AppIcons name="logout" />
                 <span class="mx-2">Sair</span>
@@ -18,29 +18,30 @@
                 <span class="mx-2 text-light">Nova demanda</span>
             </Link>
         </div>
-        <Footer />
-    </div>
+        </MainContent>
+    </AppLayout>
 </template>
 
 <script>
 import {defineComponent} from 'vue'
 
 import {Head, Link} from '@inertiajs/inertia-vue3';
-import Header from "../../Layouts/Header";
 import AppIcons from "../../Components/icons/AppIcons";
 import AppTitle from "../../Components/titles/AppTitle";
 import AppButton from "../../Components/buttons/AppButton";
-import Footer from "../../Layouts/Footer";
+import AppLayout from "../../Layouts/AppLayout";
+import MainContent from "../../Layouts/MainContent";
+
 export default defineComponent({
     name: "Dashboard",
     components: {
         Link,
         Head,
-        Header,
+        AppLayout,
+        MainContent,
         AppIcons,
         AppTitle,
         AppButton,
-        Footer,
     },
     data() {
         return {}

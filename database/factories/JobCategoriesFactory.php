@@ -3,8 +3,9 @@
 namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Support\Str;
 
-class JobsFactory extends Factory
+class JobCategoriesFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -13,8 +14,10 @@ class JobsFactory extends Factory
      */
     public function definition()
     {
+        $name = $this->faker->name;
         return [
-            //
+            'name' => $name,
+            'slug' => Str::slug($name),
         ];
     }
 }

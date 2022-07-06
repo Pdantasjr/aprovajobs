@@ -1,8 +1,8 @@
 <template>
     <Head title="Nova Demanda"/>
-    <div class="flex flex-col h-screen justify-between">
-        <Header />
-            <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mt-48 mx-auto">
+    <AppLayout>
+        <MainContent>
+            <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mx-auto">
                 <Link :href="route('front.index')">
                     <AppIcons name="return"/>
                 </Link>
@@ -41,14 +41,15 @@
                 </div>
             </form>
         </div>
-        <Footer />
-    </div>
+        </MainContent>
+    </AppLayout>
 </template>
 
 <script>
 import {defineComponent} from 'vue'
 import {Head, Link} from '@inertiajs/inertia-vue3';
-import Header from "../../../Layouts/Header";
+import AppLayout from "../../../Layouts/AppLayout";
+import MainContent from "../../../Layouts/MainContent";
 import AppIcons from "../../../Components/icons/AppIcons";
 import AppTitle from "../../../Components/titles/AppTitle";
 import AppButton from "../../../Components/buttons/AppButton";
@@ -57,14 +58,14 @@ import AppLabel from "../../../Components/inputs/AppLabel";
 import AppInput from "../../../Components/inputs/AppInput";
 import AppTextArea from "../../../Components/inputs/AppTextArea";
 import AppSelec from "../../../Components/inputs/AppSelec";
-import Footer from "../../../Layouts/Footer";
 
 export default defineComponent({
     name: "NewJob",
     components: {
         Head,
         Link,
-        Header,
+        AppLayout,
+        MainContent,
         AppIcons,
         AppTitle,
         AppButton,
@@ -73,7 +74,6 @@ export default defineComponent({
         AppInput,
         AppTextArea,
         AppSelec,
-        Footer,
     },
     data () {
         return {
