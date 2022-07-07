@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Demands;
 use App\Models\Jobs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -12,7 +13,9 @@ class JobsController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Admin/Dashboard');
+        return Inertia::render('Admin/Dashboard',[
+            'demands' => Demands::all()
+        ]);
     }
 
     public function create()

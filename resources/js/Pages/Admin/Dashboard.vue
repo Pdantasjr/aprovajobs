@@ -13,7 +13,7 @@
                 <AppIcons name="logout" />
                 <span class="mx-2">Sair</span>
             </AppButton>
-            <Link :href="route('admin.jobs.create')" class="bg-info w-full sm:w-auto sm:px-8 flex justify-center items-center h-12 py-1 px-2 m-2 rounded-full hover:cursor-pointer transition hover:scale-105 duration-200 ease-in-out">
+            <Link :href="route('demanda.create')" class="bg-info w-full sm:w-auto sm:px-8 flex justify-center items-center h-12 py-1 px-2 m-2 rounded-full hover:cursor-pointer transition hover:scale-105 duration-200 ease-in-out">
                 <AppIcons name="add" />
                 <span class="mx-2 text-light">Nova demanda</span>
             </Link>
@@ -34,6 +34,9 @@ import MainContent from "../../Layouts/MainContent";
 
 export default defineComponent({
     name: "Dashboard",
+    props: {
+        demands: Object,
+    },
     components: {
         Link,
         Head,

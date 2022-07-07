@@ -1,9 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\Demands;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
+use Inertia\Inertia;
 
 class DemandsController extends Controller
 {
@@ -14,7 +17,9 @@ class DemandsController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Admin/Dashboard',[
+            'demands' => Demands::all()
+        ]);
     }
 
     /**
@@ -24,7 +29,7 @@ class DemandsController extends Controller
      */
     public function create()
     {
-        //
+        return Inertia::render('Admin/Jobs/Create');
     }
 
     /**
@@ -35,7 +40,7 @@ class DemandsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        dd($request->all());
     }
 
     /**
@@ -81,5 +86,22 @@ class DemandsController extends Controller
     public function destroy(Demands $demands)
     {
         //
+    }
+
+    private function setSlug($job) {
+        $titleSlug = Str::slug($job);
+
+        $query = Demands::all();
+
+        $t = 0;
+        foreach ($query as $job) {
+            if (Str::slug($job->title) === $titleSlug) {
+                $t++;
+            }
+        }
+        if ($t > 0) {
+            $titleSlug = $titleSlug . '-' . $t;
+        }
+        return $titleSlug;
     }
 }
