@@ -3,7 +3,7 @@
     <AppLayout>
         <MainContent>
             <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mx-auto">
-                <Link :href="route('front.index')">
+                <Link :href="route('demanda.index')">
                     <AppIcons name="return"/>
                 </Link>
                 <AppTitle title="Nova demanda"/>
@@ -87,7 +87,7 @@ export default defineComponent({
     },
     methods: {
         submit() {
-            this.$inertia.post(route('admin.jobs.store'), this.form, {
+            this.$inertia.post(route('demanda.store'), this.form, {
                 forceFormData: true
             });
         },

@@ -1,11 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
-use App\Models\Demands;
+use App\Http\Controllers\Controller;
+use App\Models\JobCategories;
 use Illuminate\Http\Request;
 
-class DemandsController extends Controller
+class JobCategoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -41,10 +42,10 @@ class DemandsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Demands  $demands
+     * @param  \App\Models\JobCategories  $jobCategories
      * @return \Illuminate\Http\Response
      */
-    public function show(Demands $demands)
+    public function show(JobCategories $jobCategories)
     {
         //
     }
@@ -52,10 +53,10 @@ class DemandsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Demands  $demands
+     * @param  \App\Models\JobCategories  $jobCategories
      * @return \Illuminate\Http\Response
      */
-    public function edit(Demands $demands)
+    public function edit(JobCategories $jobCategories)
     {
         //
     }
@@ -64,10 +65,10 @@ class DemandsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Demands  $demands
+     * @param  \App\Models\JobCategories  $jobCategories
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Demands $demands)
+    public function update(Request $request, JobCategories $jobCategories)
     {
         //
     }
@@ -75,10 +76,10 @@ class DemandsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Demands  $demands
+     * @param  \App\Models\JobCategories  $jobCategories
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Demands $demands)
+    public function destroy(JobCategories $jobCategories)
     {
         //
     }
