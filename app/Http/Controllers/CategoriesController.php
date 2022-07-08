@@ -1,14 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\Demands;
+use App\Models\Categories;
 use Illuminate\Http\Request;
-use Illuminate\Support\Str;
-use Inertia\Inertia;
 
-class DemandsController extends Controller
+class CategoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,9 +14,7 @@ class DemandsController extends Controller
      */
     public function index()
     {
-        return Inertia::render('Admin/Dashboard',[
-            'demands' => Demands::all()
-        ]);
+        //
     }
 
     /**
@@ -29,7 +24,7 @@ class DemandsController extends Controller
      */
     public function create()
     {
-        return Inertia::render('Admin/Jobs/Create');
+        //
     }
 
     /**
@@ -40,16 +35,16 @@ class DemandsController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Demands  $demands
+     * @param  \App\Models\Categories  $categories
      * @return \Illuminate\Http\Response
      */
-    public function show(Demands $demands)
+    public function show(Categories $categories)
     {
         //
     }
@@ -57,10 +52,10 @@ class DemandsController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Demands  $demands
+     * @param  \App\Models\Categories  $categories
      * @return \Illuminate\Http\Response
      */
-    public function edit(Demands $demands)
+    public function edit(Categories $categories)
     {
         //
     }
@@ -69,10 +64,10 @@ class DemandsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Demands  $demands
+     * @param  \App\Models\Categories  $categories
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Demands $demands)
+    public function update(Request $request, Categories $categories)
     {
         //
     }
@@ -80,28 +75,11 @@ class DemandsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Demands  $demands
+     * @param  \App\Models\Categories  $categories
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Demands $demands)
+    public function destroy(Categories $categories)
     {
         //
-    }
-
-    private function setSlug($job) {
-        $titleSlug = Str::slug($job);
-
-        $query = Demands::all();
-
-        $t = 0;
-        foreach ($query as $job) {
-            if (Str::slug($job->title) === $titleSlug) {
-                $t++;
-            }
-        }
-        if ($t > 0) {
-            $titleSlug = $titleSlug . '-' . $t;
-        }
-        return $titleSlug;
     }
 }

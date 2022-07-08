@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers;
 
-use App\Http\Controllers\Controller;
-use App\Models\JobCategories;
+use App\Models\Demands;
 use Illuminate\Http\Request;
 
-class JobCategoriesController extends Controller
+class DemandsController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -42,10 +41,10 @@ class JobCategoriesController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\JobCategories  $jobCategories
+     * @param  \App\Models\Demands  $demands
      * @return \Illuminate\Http\Response
      */
-    public function show(JobCategories $jobCategories)
+    public function show(Demands $demands)
     {
         //
     }
@@ -53,10 +52,10 @@ class JobCategoriesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\JobCategories  $jobCategories
+     * @param  \App\Models\Demands  $demands
      * @return \Illuminate\Http\Response
      */
-    public function edit(JobCategories $jobCategories)
+    public function edit(Demands $demands)
     {
         //
     }
@@ -65,10 +64,10 @@ class JobCategoriesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\JobCategories  $jobCategories
+     * @param  \App\Models\Demands  $demands
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, JobCategories $jobCategories)
+    public function update(Request $request, Demands $demands)
     {
         //
     }
@@ -76,10 +75,10 @@ class JobCategoriesController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\JobCategories  $jobCategories
+     * @param  \App\Models\Demands  $demands
      * @return \Illuminate\Http\Response
      */
-    public function destroy(JobCategories $jobCategories)
+    public function destroy(Demands $demands)
     {
         //
     }
