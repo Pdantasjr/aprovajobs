@@ -19,7 +19,7 @@ class DemandsFactory extends Factory
             'title' => $title,
             'slug' => Str::slug($title),
             'description' => $this->faker->text(300),
-            'status' => rand(1, 8),
+            'status' => rand(0, 8),
             'job_author' => 1,
             'job_category' => rand(1, 10),
             'deadline' => $this->faker->date(),
