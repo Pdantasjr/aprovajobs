@@ -5,7 +5,7 @@
             :name="name"
             :id="id"
             @input="$emit('update:modelValue', $event.target.value)"
-            class="h-32 sm:h-36 dark:bg-dark bg-light rounded-2xl transition duration-75 focus:border-primary focus:ring-1 active:outline-4 dark:text-light text-dark text-sm px-6"
+            class="h-32 sm:h-36 dark:bg-dark bg-light rounded-2xl text-lg transition duration-75 focus:border-primary focus:ring-1 active:outline-4 dark:text-light text-dark text-lg font-semibold px-6"
         >
         </textarea>
     </div>

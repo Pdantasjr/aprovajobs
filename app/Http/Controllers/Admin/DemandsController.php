@@ -18,7 +18,7 @@ class DemandsController extends Controller
     public function index()
     {
         return Inertia::render('Admin/Dashboard',[
-            'demands' => Demands::all()
+            'demands' => Demands::with('demandCategory')->get(),
         ]);
     }
 

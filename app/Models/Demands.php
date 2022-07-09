@@ -19,4 +19,9 @@ class Demands extends Model
         'job_category',
         'deadline'
     ];
+
+    public function demandCategory()
+    {
+        return $this->hasOne(JobCategories::class, 'id', 'job_category');
+    }
 }

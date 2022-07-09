@@ -42,7 +42,7 @@ module.exports = {
                 'dark': '#27272A',
                 'light': '#F5F5F5',
                 'danger': '#F87171',
-                'warning': '#FFE07C',
+                'warning': '#E5BD38',
                 'info': '#71BFF8',
                 'secondary': '#6FF4C8',
                 'line-border': '#999999',

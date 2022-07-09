@@ -6,6 +6,25 @@
     <svg v-else-if="name === 'return'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dark:text-light text-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" /></svg>
     <svg v-else-if="name === 'enter'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-light" fill="none" viewBox="0 0 18 15" stroke="currentColor" stroke-width="2"><path d="M5 9L9 5M9 5L13 9M9 5L9 14M5 14L4 14C3.20435 14 2.44129 13.6839 1.87868 13.1213C1.31607 12.5587 1 11.7956 1 11L1 4C1 3.20435 1.31607 2.44129 1.87868 1.87868C2.44129 1.31607 3.20435 0.999999 4 0.999999L14 1C14.7956 1 15.5587 1.31607 16.1213 1.87868C16.6839 2.44129 17 3.20435 17 4L17 11C17 11.7956 16.6839 12.5587 16.1213 13.1213C15.5587 13.6839 14.7956 14 14 14L13 14" stroke="#F5F5F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <svg v-else-if="name === 'recovery'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-light" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+    <svg v-else-if="name === 'warning'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    <svg v-else-if="name === 'eye'"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-dark/30 dark:text-light/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+    <svg v-else-if="name === 'filter'" width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1H17M4 7H14M7 13H11" stroke="#27272A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+    <!--HOVER-->
+    <svg v-else-if="name === 'hover-add'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 dark:text-light text-dark hover:cursor-pointer hover:text-dark/30 hover:dark:text-light/30 transition-all duration-200 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    <svg v-else-if="name === 'hover-eye'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-dark/30 dark:text-light/30 dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+    <svg v-else-if="name === 'hover-filter'" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-dark/30 dark:text-light/30 dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out" viewBox="0 0 18 14" fill="none"><path d="M1 1H17M4 7H14M7 13H11" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+
+    <!--STATUS-->
+    <svg v-else-if="name === 'status-archived'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-dark/30 dark:text-light/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" /></svg>
+    <svg v-else-if="name === 'status-analysis'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-info" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    <svg v-else-if="name === 'status-daley'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-danger" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
+    <svg v-else-if="name === 'status-production'"  xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-info" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" /></svg>
+    <svg v-else-if="name === 'status-change'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    <svg v-else-if="name === 'status-pendent'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-warning" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    <svg v-else-if="name === 'status-approved'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+    <svg v-else-if="name === 'status-done'" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-dark/30 dark:text-light/30" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+
 </template>
 
 <script>
@@ -15,3 +34,12 @@ export default {
     },
 }
 </script>
+
+<!--0 - ARQUIVADO - dark [#27272A33] -->
+<!--1 - EM ANALISE - info [#71BFF8]-->
+<!--2 - EM ATRASO - danger [#F87171]-->
+<!--3 - EM PRODUÇÃO - info [#71BFF8]-->
+<!--4 - ALTERAÇÃO - warning [#E5BD38]-->
+<!--5 - PENDENTE DE APROVAÇÃO - warning [#E5BD38]-->
+<!--6 - APROVADO - primary [#10B981] -->
+<!--7 - CONCLUÍDO - dark [#27272A33]-->
