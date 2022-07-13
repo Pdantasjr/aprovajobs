@@ -5,11 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Demands extends Model
+class Jobs extends Model
 {
     use HasFactory;
-
-    protected $table = "demands";
     protected $fillable = [
         'title',
         'slug',
@@ -20,7 +18,7 @@ class Demands extends Model
         'deadline'
     ];
 
-    public function demandCategory()
+    public function jobCategory()
     {
         return $this->hasOne(JobCategories::class, 'id', 'job_category');
     }

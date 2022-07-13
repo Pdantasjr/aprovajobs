@@ -32,7 +32,7 @@
                 <div class="mt-6 w-full flex justify-end items-end">
                     <AppButton>
                         <AppIcons name="sent" />
-                        <span class="text-light mx-2">Enviar</span>
+                        <span class="text-light mx-2">Atualizar</span>
                     </AppButton>
                 </div>
             </form>
@@ -57,6 +57,9 @@ import AppSelec from "../../../Components/inputs/AppSelec";
 
 export default defineComponent({
     name: "NewJob",
+    props: {
+        job: Object,
+    },
     components: {
         Head,
         Link,
