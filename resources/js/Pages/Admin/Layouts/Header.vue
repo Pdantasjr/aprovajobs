@@ -1,5 +1,6 @@
 <template>
     <div class="flex items-center justify-center w-full h-40 dark:bg-dark bg-light border-b dark:border-line-border/30 border-line-border/30 ">
+        <Siderbar />
         <!--LOGOTIPO-->
         <Link :href="route('front.index')">
             <img v-if="this.darkMode" src="./Images/logotype/logotipo-aprova-jobs-dark-mode.svg"
@@ -8,19 +9,19 @@
                  alt="logotipo aprova jobs">
         </Link>
     </div>
-    <ToggleDarkMode />
 </template>
 
 <script>
 import {defineComponent} from 'vue'
 import {Head, Link} from "@inertiajs/inertia-vue3";
-import ToggleDarkMode from "../Components/buttons/ToggleDarkMode";
+import Siderbar from "./Sidebar"
+
 export default defineComponent({
     name: "Header",
     components: {
+        Siderbar,
         Head,
         Link,
-        ToggleDarkMode,
     },
     data () {
         return {

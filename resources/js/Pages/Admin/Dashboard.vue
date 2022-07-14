@@ -106,8 +106,8 @@ import {Head, Link} from '@inertiajs/inertia-vue3';
 import AppIcons from "../../Components/icons/AppIcons";
 import AppTitle from "../../Components/titles/AppTitle";
 import AppButton from "../../Components/buttons/AppButton";
-import AppLayout from "../../Layouts/AppLayout";
-import MainContent from "../../Layouts/MainContent";
+import AppLayout from "./Layouts/AppLayout";
+import MainContent from "./Layouts/MainContent";
 import AppStatus from "../../Components/status/AppStatus";
 import AppInputSearch from "../../Components/inputs/AppInputSearch";
 
