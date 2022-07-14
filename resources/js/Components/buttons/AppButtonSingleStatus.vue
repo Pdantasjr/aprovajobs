@@ -1,20 +1,22 @@
 <template>
     <div class="rounded-full flex w-full my-4">
-        <span :class="[baseTextColor, baseBg]" class="rounded-l-full px-4 py-2 text-center flex items-center justify-center border-2 w-full">
-            <AppIcons :name="icon"/>
-            <span :class="baseTextColor" class="mx-2 font-semibold">{{ baseText }}</span>
-        </span>
-        <span :class="[baseTextColor, baseBg]" class="text-center flex px-4 py-2  items-center justify-center border rounded-r-full w-full">
-            <span class="mx-2 text-light">Descrição do status</span>
-        </span>
+        <button class="rounded-l-full px-4 py-2 text-center flex items-center justify-center bg-primary w-full">
+            <AppIcons name="single-job-button-done"/>
+            <span class="mx-2 font-semibold text-light">Aprovado</span>
+        </button>
+        <button class="rounded-r-full px-4 py-2 text-center flex items-center justify-center bg-warning w-full">
+            <AppIcons name="single-job-button-edit"/>
+            <span class="mx-2 font-semibold text-light">Sugerir alterações</span>
+        </button>
     </div>
 </template>
 
 <script>
 import AppIcons from "../icons/AppIcons";
+import Button from "../../Jetstream/Button";
 
 export default {
-    name: "AppStatus",
+    name: "AppButtonStatus",
     props: {
         status: {
             type: Number,
@@ -22,6 +24,7 @@ export default {
         },
     },
     components: {
+        Button,
         AppIcons
     },
     data() {

@@ -15,7 +15,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
                 Route::get('/dashboard', [JobsController::class, 'index'])->name('dashboard');
                 Route::get('/novo-job', [JobsController::class, 'create'])->name('create');
                 Route::post('/novo-job', [JobsController::class, 'store'])->name('store');
-                Route::get('/ver-job/{slug}', [JobsController::class, 'show'])->name('show');
+                Route::get('/job/{slug}', [JobsController::class, 'show'])->name('show');
             });
         });
     });

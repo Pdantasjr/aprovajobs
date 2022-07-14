@@ -60,7 +60,7 @@ class JobsController extends Controller
 
     public function show($slug) {
         return Inertia::render('Admin/Jobs/Show', [
-            'job' => Jobs::where('slug', $slug)->first(),
+            'job' => Jobs::where('slug', $slug)->with('jobCategory')->first(),
         ]);
     }
 

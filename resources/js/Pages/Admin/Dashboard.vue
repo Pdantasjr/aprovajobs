@@ -9,20 +9,17 @@
                 <AppTitle title="Acompanhamento dos jobs"/>
             </div>
             <div class="flex items-center w-11/12 lg:w-full max-w-6xl h-auto mx-auto mt-6 mb-8">
-
                 <AppInputSearch v-if="jobs.length"/>
                 <Link :href="route('admin.jobs.create')"
                       v-if="jobs.length"
                       class="flex justify-center items-center rounded-full mx-4 hover:cursor-pointer transition duration-200 ease-in-out">
                     <AppIcons name="hover-filter"/>
                 </Link>
-
                 <Link :href="route('admin.jobs.create')"
                       class="bg-info w-full sm:w-auto sm:px-8 flex justify-center items-center h-12 py-1 ml-2 rounded-full hover:cursor-pointer transition hover:scale-105 duration-200 ease-in-out">
                     <AppIcons name="add"/>
                     <span class="mx-2 text-light flex-auto w-32">Novo Job</span>
                 </Link>
-
             </div>
             <div class="items-center w-11/12 lg:w-full max-w-6xl h-auto mx-auto">
                 <div v-if="jobs.length">

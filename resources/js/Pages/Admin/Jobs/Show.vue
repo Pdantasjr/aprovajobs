@@ -9,7 +9,7 @@
                 <AppTitle :title="job.title"/>
             </div>
             <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
-                <AppAccordion />
+                <AppAccordion :description="job.description" :category="job.job_category.name" :deadline="job.deadline" />
             </div>
             <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
                 <h1 class="text-light font-semibold">Status</h1>
@@ -26,6 +26,9 @@
                     </div>
                 </div>
             </div>
+            <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
+                <AppButtonSingleStatus />
+            </div>
         </MainContent>
     </AppLayout>
 </template>
@@ -40,6 +43,7 @@ import AppTitle from "../../../Components/titles/AppTitle";
 import AppButton from "../../../Components/buttons/AppButton";
 import AppAccordion from "../../../Components/Accordion/AppAccordion";
 import AppSingleStatus from "../../../Components/status/AppSingleStatus";
+import AppButtonSingleStatus from "../../../Components/buttons/AppButtonSingleStatus";
 
 export default  defineComponent({
     name: "Show",
@@ -56,6 +60,7 @@ export default  defineComponent({
         AppButton,
         AppAccordion,
         AppSingleStatus,
+        AppButtonSingleStatus,
     }
 })
 </script>
