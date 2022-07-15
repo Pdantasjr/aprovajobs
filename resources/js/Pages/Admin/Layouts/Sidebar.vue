@@ -1,44 +1,60 @@
 <template>
-    <div v-if="!sidebarIsActive" class="absolute h-screen z-10 inset-0 bg-dark2 bg-opacity-25 backdrop-blur-[5px]"></div>
+<!--    <div v-if="!sidebarIsActive" class="absolute h-screen z-10 inset-0 bg-dark2 bg-opacity-25 backdrop-blur-[5px]"></div>-->
     <aside :class="toggleWidth" class="flex flex-col h-screen absolute top-0 left-0 z-10 w-48 bg-dark2 overflow-hidden shadow-2xl transition-all duration-300 bg-white w-2/12 rounded-r-2xl shadow-lg">
-        <header v-if="!sidebarIsActive" class="p-3 w-full h-20 flex items-center justify-end mt-4">
-            <div>
-                <img src="./Images/logotype/logotipo-aprova-jobs-dark-mode.svg" alt="">
+        <header v-if="!sidebarIsActive" class="p-4 w-full h-36 flex items-center justify-end mt-4 mx-auto border border-red-600">
+            <div class="w-full h-auto block">
+                <img class="ml-4 h-8 w-auto" src="./Images/logotype/logotipo-horizontal-aprova-jobs-dark-mode.svg.svg" alt="Logotipo">
             </div>
                 <div @click="sidebarIsActive = !sidebarIsActive" class="flex items-center p-2 rounded-lg font-medium transition duration-300 hover:cursor-pointer hover:bg-light/5 focus:bg-light/5">
                     <AppIcons v-if="!sidebarIsActive" name="sidebar-collapse" />
                 </div>
         </header>
-        <nav v-if="!sidebarIsActive" class="flex-1 overflow-y-auto py-2">
+<!--        SIDEBAR CONTENT-->
+        <nav v-if="!sidebarIsActive" class="flex-1 overflow-y-auto py-2 border border-yellow-600">
 
-                <button class="bg-info w-auto w-11/12 flex justify-center mx-2 items-center h-12 rounded-full hover:cursor-pointer transition duration-200 ease-in-out">
+            <div class="flex items-center justify-center my-4">
+                <button class="bg-primary w-auto w-10/12 flex justify-center mx-2 items-center h-10 rounded-full hover:cursor-pointer transition duration-200 ease-in-out">
                     <AppIcons name="add" />
                     <span class="block mx-2 text-light">Adicionar Job</span>
                 </button>
+            </div>
 
-            <ul class="space-y-6 px-6 w-full">
+            <ul class="space-y-6 px-6 w-full mt-14">
                 <li>
-                    <ul class="text-sm space-y-1 -mx-3 mt-2">
+                    <ul class="text-sm space-y-6 -mx-3 mt-2">
                         <li>
                             <Link
-                                class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light/5 focus:bg-light/5">
+                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light/5 focus:bg-light/5">
                                 <AppIcons name="config"/>
-                                <span class="text-dark dark:text-light text-sm">Configurações</span>
-                                <span></span>
+                                <span class="text-dark dark:text-light block text-sm">Configurações</span>
                             </Link>
                         </li>
                         <li>
                             <Link
-                                class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light/5 focus:bg-light/5">
+                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light/5 focus:bg-light/5">
+                                <AppIcons name="config"/>
+                                <span class="text-dark dark:text-light block text-sm">Configurações</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light/5 focus:bg-light/5">
+                                <AppIcons name="config"/>
+                                <span class="text-dark dark:text-light block text-sm">Configurações</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light/5 focus:bg-light/5">
                                 <AppIcons name="edit"/>
-                                <span class="text-dark dark:text-light text-sm">Categorias</span>
+                                <span class="text-dark dark:text-light block text-sm">Categorias</span>
                             </Link>
                         </li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <footer v-if="!sidebarIsActive" class="py-3 flex flex-col items-start w-full">
+        <footer v-if="!sidebarIsActive" class="py-3 flex flex-col items-start w-full border border-pink-600">
             <ul class="space-y-6 px-6 w-full">
                 <li>
                     <ul class="text-sm space-y-1 -mx-3 mt-2">
@@ -151,5 +167,6 @@ export default defineComponent({
     }
 })
 </script>
-<style>
+<style scoped>
+
 </style>
