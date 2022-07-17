@@ -1,24 +1,30 @@
 <template>
-    <aside :class="toggleWidth" class="flex flex-col h-screen w-72 absolute top-0 left-0 z-10 dark:bg-dark2 bg-light2 overflow-hidden transition-all duration-300 bg-white rounded-r-2xl">
+    <aside :class="toggleWidth"
+           class="flex flex-col h-screen w-72 absolute top-0 left-0 z-10 dark:bg-dark2 bg-light2 overflow-hidden transition-all duration-300 bg-white rounded-r-2xl">
+
         <header v-if="!sidebarIsActive" class="p-4 w-full h-36 flex items-center justify-end mt-4 mx-auto">
             <div class="w-full h-auto block">
                 <transition>
-                    <img v-if="!sidebarIsActive" class="ml-4 h-8 w-auto" src="./Images/logotype/logotipo-horizontal-aprova-jobs-light-mode.svg.svg" alt="Logotipo">
+                    <img v-if="!sidebarIsActive" class="ml-4 h-8 w-auto"
+                         src="./Images/logotype/logotipo-horizontal-aprova-jobs-light-mode.svg.svg" alt="Logotipo">
                 </transition>
             </div>
             <div @click="sidebarIsActive = !sidebarIsActive"
                  class="flex items-center p-2 rounded-lg font-medium transition duration-300 hover:cursor-pointer hover:bg-light hover:dark:bg-dark focus:bg-light/5">
-                <AppIcons v-if="!sidebarIsActive" name="sidebar-collapse"/>
+                <AppIcons name="sidebar-collapse"/>
             </div>
         </header>
-        <nav v-if="!sidebarIsActive" class="flex-1 overflow-y-auto py-2">
-            <div class="flex items-center justify-center my-4">
-                <button
-                    class="bg-primary w-auto w-10/12 flex justify-center mx-2 items-center h-12 rounded-full hover:cursor-pointer transition duration-200 ease-in-out hover:scale-105">
-                    <AppIcons name="sidebar-add"/>
-                    <span class="block mx-2 text-light">Adicionar Job</span>
-                </button>
-            </div>
+
+            <nav v-if="!sidebarIsActive" class="flex-1 overflow-y-auto py-2">
+            <transition name="slide-fade">
+                <div class="flex items-center justify-center my-4">
+                    <button
+                        class="bg-primary w-auto w-10/12 flex justify-center mx-2 items-center h-12 rounded-full hover:cursor-pointer transition duration-200 ease-in-out hover:scale-105">
+                        <AppIcons name="sidebar-add"/>
+                        <span class="block mx-2 text-light">Adicionar Job</span>
+                    </button>
+                </div>
+            </transition>
             <ul class="space-y-6 px-6 w-full mt-14">
                 <li>
                     <ul class="text-sm space-y-4 -mx-3 mt-2">
@@ -48,7 +54,7 @@
                             <Link
                                 class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-config"/>
-                                <span v-if="!sidebarIsActive" class="text-dark dark:text-light block text-sm">Configurações</span>
+                                <span class="text-dark dark:text-light block text-sm">Configurações</span>
                             </Link>
                         </li>
                         <li>
@@ -60,15 +66,13 @@
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                           d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                                 </svg>
-                                <span v-if="!sidebarIsActive"
-                                      class="dark:text-light/30 text-dark/30 group-hover:dark:text-light group-hover:text-dark transition duration-300 ease-in-out block">Mudar tema</span>
+                                <span class="dark:text-light/30 text-dark/30 group-hover:dark:text-light group-hover:text-dark transition duration-300 ease-in-out block">Mudar tema</span>
                             </button>
                         </li>
                         <li>
-                            <button
-                                class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                            <button class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-logout"/>
-                                    <span v-if="!sidebarIsActive" class="text-danger block">Sair</span>
+                                <span class="text-danger block">Sair</span>
                             </button>
                         </li>
                     </ul>
@@ -76,9 +80,9 @@
             </ul>
         </footer>
 
-        <header v-if="sidebarIsActive" class="p-4 w-full h-36 flex items-center mt-4">
+        <header v-if="sidebarIsActive" class="w-full h-36 flex items-center justify-center mt-4 mx-auto">
             <div @click="sidebarIsActive = !sidebarIsActive"
-                 class="p-2 w-full flex justify-center items-center rounded-lg transition duration-300 hover:cursor-pointer hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                 class="flex items-center p-2 rounded-lg font-medium transition duration-300 hover:cursor-pointer hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                 <AppIcons v-if="sidebarIsActive" name="sidebar-burger"/>
             </div>
         </header>
@@ -136,6 +140,7 @@
                 </li>
             </ul>
         </footer>
+
     </aside>
 </template>
 
@@ -162,7 +167,7 @@ export default defineComponent({
     },
     computed: {
         toggleWidth() {
-            return this.sidebarIsActive = this.sidebarIsActive ? 'w-1/12 items-center' : ''
+            return this.sidebarIsActive = this.sidebarIsActive ? 'w-24 items-center' : ''
         }
     },
     methods: {
@@ -179,13 +184,17 @@ export default defineComponent({
 })
 </script>
 <style scoped>
-.v-enter-active,
-.v-leave-active {
-    transition: opacity 3s ease;
+.slide-fade-enter-active {
+    transition: all 0.3s ease-out;
 }
 
-.v-enter-from,
-.v-leave-to {
+.slide-fade-leave-active {
+    transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+    transform: translateX(20px);
     opacity: 0;
 }
 </style>
