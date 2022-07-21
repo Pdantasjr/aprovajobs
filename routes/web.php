@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\JobsController;
+use App\Http\Controllers\Admin\JobCategoriesController;
 use App\Http\Controllers\Front;
 use Illuminate\Support\Facades\Route;
 
@@ -18,5 +19,10 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
                 Route::get('/job/{slug}', [JobsController::class, 'show'])->name('show');
             });
         });
+
+        Route::name('admin.')->group(function () {
+            Route::resource('categories', JobCategoriesController::class);
+        });
+        
     });
 });

@@ -36,7 +36,7 @@
                             </Link>
                         </li>
                         <li>
-                            <Link
+                            <Link :href="route('categories.index')"
                                 class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-edit"/>
                                 <span class="text-dark dark:text-light block text-sm">Categorias</span>

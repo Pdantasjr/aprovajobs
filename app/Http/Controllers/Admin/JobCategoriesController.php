@@ -1,9 +1,11 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Admin;
 
+use App\Http\Controllers\Controller;
 use App\Models\JobCategories;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class JobCategoriesController extends Controller
 {
@@ -14,7 +16,9 @@ class JobCategoriesController extends Controller
      */
     public function index()
     {
-        //
+        return Inertia::render('Categories/Index', [
+            'categories' => JobCategories::all()
+        ]);
     }
 
     /**
