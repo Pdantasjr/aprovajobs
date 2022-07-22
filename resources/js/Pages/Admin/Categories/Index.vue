@@ -1,5 +1,5 @@
 <template>
-    <Head title="Cadegotias"/>
+    <Head title="Categorias"/>
     <AppLayout>
         <MainContent>
             <div class="flex items-center w-11/12 lg:w-full max-w-6xl h-auto mt-4 mx-auto">
@@ -31,9 +31,6 @@
                                         <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Nome</span>
                                     </th>
                                     <th scope="col" class="px-6 py-3">
-                                        <span class="flex items-start text-sm font-semibold text-dark dark:text-light">slug</span>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
                                         <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Ações</span>
                                     </th>
                                 </tr>
@@ -48,12 +45,10 @@
                                 </td>
                                 <td>
                                     <div class="px-4 py-2">
-                                        <span class="text-dark dark:text-light font-light">{{ category.slug }}</span>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div class="px-4 py-2">
-                                        <span class="text-dark dark:text-light font-light"></span>
+                                        <div class=" flex justify-around items-center border border-red-700 w-20">
+                                            <Link class="mx-2" :href="route('admin.categories.update', [category.slug])" ><AppIcons name="edit" /> </Link>
+<!--                                            <Link class="mx-2" :href="route('admin.categories.destroy', [category.id])" ><AppIcons name="trash" /> </Link>-->
+                                        </div>
                                     </div>
                                 </td>
                             </tr>

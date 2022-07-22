@@ -23,7 +23,7 @@
                                 <div class="ml-2 flex flex-col items-start">
                                     <Link class="">
                                         <span class="text-dark dark:text-light text-[12pt]">
-                                            Bem vindo, Engel
+                                            Bem vindo, {{ this.$attrs.user.name }}
                                         </span>
                                     </Link>
                                     <Link>
@@ -39,7 +39,7 @@
                 <li>
                     <ul class="text-sm space-y-1 -mx-3 mt-2">
                         <li>
-                            <Link
+                            <Link :href="route('admin.jobs.dashboard')"
                                 class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light/5 focus:bg-light/5">
                                 <AppIcons name="config"/>
                                 <span class="text-dark dark:text-light text-sm">Configurações</span>
@@ -47,7 +47,7 @@
                             </Link>
                         </li>
                         <li>
-                            <Link
+                            <Link :href="route('admin.categories.create')"
                                 class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light/5 focus:bg-light/5">
                                 <AppIcons name="edit"/>
                                 <span class="text-dark dark:text-light text-sm">Categorias</span>

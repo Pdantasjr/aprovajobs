@@ -15,7 +15,7 @@
             </div>
         </header>
 
-            <nav v-if="!sidebarIsActive" class="flex-1 overflow-y-auto py-2">
+        <nav v-if="!sidebarIsActive" class="flex-1 overflow-y-auto py-2">
             <transition name="slide-fade">
                 <div class="flex items-center justify-center my-4">
                     <button
@@ -29,15 +29,15 @@
                 <li>
                     <ul class="text-sm space-y-4 -mx-3 mt-2">
                         <li>
-                            <Link
-                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                            <Link :href="route('admin.jobs.dashboard')"
+                                  class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-clipboard"/>
                                 <span class="text-dark dark:text-light block text-sm">Dashboard</span>
                             </Link>
                         </li>
                         <li>
-                            <Link :href="route('categories.index')"
-                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                            <Link :href="route('admin.categories.index')"
+                                  class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-edit"/>
                                 <span class="text-dark dark:text-light block text-sm">Categorias</span>
                             </Link>
@@ -66,11 +66,13 @@
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                           d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                                 </svg>
-                                <span class="dark:text-light/30 text-dark/30 group-hover:dark:text-light group-hover:text-dark transition duration-300 ease-in-out block">Mudar tema</span>
+                                <span
+                                    class="dark:text-light/30 text-dark/30 group-hover:dark:text-light group-hover:text-dark transition duration-300 ease-in-out block">Mudar tema</span>
                             </button>
                         </li>
                         <li>
-                            <button class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                            <button
+                                class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-logout"/>
                                 <span class="text-danger block">Sair</span>
                             </button>
@@ -97,14 +99,14 @@
                 <li>
                     <ul class="text-sm space-y-4 mt-2">
                         <li>
-                            <Link
-                                class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                            <Link :href="route('admin.jobs.dashboard')"
+                                  class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-clipboard"/>
                             </Link>
                         </li>
                         <li>
-                            <Link
-                                class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                            <Link :href="route('admin.categories.index')"
+                                  class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-edit"/>
                             </Link>
                         </li>

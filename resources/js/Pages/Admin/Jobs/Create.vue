@@ -9,34 +9,34 @@
                 <AppTitle title="Novo job"/>
             </div>
             <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
-            <transition>
-                <AppValidationErrors class="mb-4"/>
-            </transition>
-            <form @submit.prevent="submit">
-                <AppLabel text="Título da job:" for-input="title" required />
-                <AppInput name="title" id="title" v-model="form.title" autofocus required/>
+                <transition>
+                    <AppValidationErrors class="mb-4"/>
+                </transition>
+                <form @submit.prevent="submit">
+                    <AppLabel text="Título da job:" for-input="title" required/>
+                    <AppInput name="title" id="title" v-model="form.title" autofocus required/>
 
-                <AppLabel text="Descreva seu job:" for-input="description" required />
-                <AppTextArea name="description" id="description" v-model="form.description" required />
+                    <AppLabel text="Descreva seu job:" for-input="description" required/>
+                    <AppTextArea name="description" id="description" v-model="form.description" required/>
 
-                <div class="flex flex-col sm:w-5/12 mt-6">
-                    <AppLabel text="Categoria:" for-input="category" />
-                    <AppSelec name="category" id="category" v-model="form.category" required />
-                </div>
+                    <div class="flex flex-col sm:w-5/12 mt-6">
+                        <AppLabel text="Categoria:" for-input="category"/>
+                        <AppSelec name="category" id="category" v-model="form.category" required/>
+                    </div>
 
-                <div class="flex flex-col sm:w-5/12 mt-6">
-                    <AppLabel text="Prazo de entrega?" for-input="deadline" />
-                    <AppInput type="date" name="deadline" id="deadline" v-model="form.deadline"/>
-                </div>
+                    <div class="flex flex-col sm:w-5/12 mt-6">
+                        <AppLabel text="Prazo de entrega?" for-input="deadline"/>
+                        <AppInput type="date" name="deadline" id="deadline" v-model="form.deadline"/>
+                    </div>
 
-                <div class="mt-6 w-full flex justify-end items-end">
-                    <AppButton>
-                        <AppIcons name="sent" />
-                        <span class="text-light mx-2">Enviar</span>
-                    </AppButton>
-                </div>
-            </form>
-        </div>
+                    <div class="mt-6 w-full flex justify-end items-end">
+                        <AppButton>
+                            <AppIcons name="sent"/>
+                            <span class="text-light mx-2">Enviar</span>
+                        </AppButton>
+                    </div>
+                </form>
+            </div>
         </MainContent>
     </AppLayout>
 </template>
@@ -71,7 +71,7 @@ export default defineComponent({
         AppTextArea,
         AppSelec,
     },
-    data () {
+    data() {
         return {
             form: this.$inertia.form({
                 title: '',
