@@ -1,7 +1,7 @@
 <template>
     <aside :class="toggleWidth"
-           class="flex flex-col h-screen w-72 absolute top-0 left-0 z-10 dark:bg-dark2 bg-light2 overflow-hidden transition-all duration-300 bg-white rounded-r-2xl">
-
+           class="flex flex-col h-screen w-72 absolute top-0 left-0 z-10 dark:bg-dark2 bg-light2 overflow-hidden transition-all duration-200 bg-white rounded-r-2xl">
+        <!--EXPANDIDO-->
         <header v-if="!sidebarIsActive" class="p-4 w-full h-36 flex items-center justify-end mt-4 mx-auto">
             <div class="w-full h-auto block">
                 <transition>
@@ -14,7 +14,6 @@
                 <AppIcons name="sidebar-collapse"/>
             </div>
         </header>
-
         <nav v-if="!sidebarIsActive" class="flex-1 overflow-y-auto py-2">
             <transition name="slide-fade">
                 <div class="flex items-center justify-center my-4">
@@ -36,10 +35,17 @@
                             </Link>
                         </li>
                         <li>
+                            <Link
+                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                                <AppIcons name="sidebar-puzzle"/>
+                                <span class="text-dark dark:text-light block text-sm">Jobs</span>
+                            </Link>
+                        </li>
+                        <li>
                             <Link :href="route('admin.categories.index')"
                                   class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-edit"/>
-                                <span class="text-dark dark:text-light block text-sm">Categorias</span>
+                                <span class="text-dark dark:text-light inline-block text-sm">Categorias</span>
                             </Link>
                         </li>
                     </ul>
@@ -81,7 +87,7 @@
                 </li>
             </ul>
         </footer>
-
+        <!--RECOLHIDO-->
         <header v-if="sidebarIsActive" class="w-full h-36 flex items-center justify-center mt-4 mx-auto">
             <div @click="sidebarIsActive = !sidebarIsActive"
                  class="flex items-center p-2 rounded-lg font-medium transition duration-300 hover:cursor-pointer hover:bg-light hover:dark:bg-dark focus:bg-light/5">
@@ -102,6 +108,12 @@
                             <Link :href="route('admin.jobs.dashboard')"
                                   class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-clipboard"/>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                                <AppIcons name="sidebar-puzzle"/>
                             </Link>
                         </li>
                         <li>

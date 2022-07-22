@@ -25,10 +25,10 @@ class UserFactory extends Factory
     public function definition()
     {
         return [
-            'name' => env('ROOT_USER'),
-            'email' => env('ROOT_EMAIL'),
+            'name' => "admin",
+            'email' => "admin@solutionstec.com.br",
             'email_verified_at' => now(),
-            'password' => bcrypt(env('ROOT_PASS')), // password
+            'password' => bcrypt('admin@123'), // password
             'remember_token' => Str::random(10),
         ];
     }

@@ -45,9 +45,9 @@
                                 </td>
                                 <td>
                                     <div class="px-4 py-2">
-                                        <div class=" flex justify-around items-center border border-red-700 w-20">
+                                        <div class=" flex justify-around items-center w-20">
                                             <Link class="mx-2" :href="route('admin.categories.update', [category.slug])" ><AppIcons name="edit" /> </Link>
-<!--                                            <Link class="mx-2" :href="route('admin.categories.destroy', [category.id])" ><AppIcons name="trash" /> </Link>-->
+                                            <Link class="mx-2" :href="route('admin.categories.destroy', [category.id])" ><AppIcons name="trash" /> </Link>
                                         </div>
                                     </div>
                                 </td>

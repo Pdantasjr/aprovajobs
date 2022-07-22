@@ -23,6 +23,6 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function () {
         Route::name('admin.')->group(function () {
             Route::resource('categories', JobCategoriesController::class);
         });
-        
+
     });
 });
