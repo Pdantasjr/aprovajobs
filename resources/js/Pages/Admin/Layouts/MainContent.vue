@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="ml-45 lg:ml-0">
         <slot></slot>
     </div>
 </template>

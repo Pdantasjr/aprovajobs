@@ -21,7 +21,7 @@ export default {
     },
     methods: {
       toggleDarkMode() {
-          console.log('year!')
+          return document.documentElement.classList.toggle('dark')
       }
     }
 }

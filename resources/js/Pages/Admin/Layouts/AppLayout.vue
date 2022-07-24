@@ -1,8 +1,9 @@
 <template>
+    <Sidebar/>
+
     <div class="dark:bg-dark bg-light min-h-screen flex flex-col justify-between">
         <Header/>
-        <Sidebar />
-            <slot></slot>
+        <slot></slot>
         <Footer/>
     </div>
 </template>

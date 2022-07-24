@@ -1,11 +1,11 @@
 <template>
-    <div class="flex items-center justify-center w-full h-40 dark:bg-dark bg-light border-b dark:border-line-border/30 border-line-border/30 ">
-        <Siderbar />
+    <div class=" flex items-center justify-center w-full h-40 dark:bg-dark bg-light border-b dark:border-line-border/30 border-line-border/30 ">
         <!--LOGOTIPO-->
         <Link :href="route('front.index')">
-            <img v-if="this.darkMode" src="./Images/logotype/logotipo-aprova-jobs-dark-mode.svg"
+            <img v-if="isDark" src="./Images/logotype/logotipo-aprova-jobs-dark-mode.svg"
                  alt="logotipo aprova jobs">
-            <img v-if="!this.darkMode" src="./Images/logotype/logotipo-aprova-jobs-light-mode.svg"
+
+            <img v-if="!isDark" src="./Images/logotype/logotipo-aprova-jobs-light-mode.svg"
                  alt="logotipo aprova jobs">
         </Link>
     </div>
@@ -14,18 +14,22 @@
 <script>
 import {defineComponent} from 'vue'
 import {Head, Link} from "@inertiajs/inertia-vue3";
-import Siderbar from "./Sidebar"
 
 export default defineComponent({
     name: "Header",
     components: {
-        Siderbar,
         Head,
         Link,
     },
     data () {
         return {
-            darkMode: window.matchMedia('(prefers-color-scheme: dark)').matches,
+            isDark: true,
+        }
+    },
+    methods: {
+        toggleTheme() {
+            document.documentElement.classList.toggle('dark')
+            this.isDark = !this.isDark
         }
     }
 })

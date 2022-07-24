@@ -6,19 +6,12 @@
                 <Link :href="route('admin.dashboard.index')">
                     <AppIcons name="return"/>
                 </Link>
-                <AppTitle title="Jobs"/>
+                <AppTitle title="Acompanhamento de demandas"/>
             </div>
-            <div class="flex items-center w-11/12 lg:w-full max-w-6xl h-auto mx-auto mt-6 mb-8">
-                <AppInputSearch v-if="jobs.length"/>
-                <Link :href="route('admin.jobs.create')"
-                      v-if="jobs.length"
-                      class="flex justify-center items-center rounded-full mx-4 hover:cursor-pointer transition duration-200 ease-in-out">
-                    <AppIcons name="hover-filter"/>
-                </Link>
-                <Link :href="route('admin.jobs.create')"
-                      class="bg-info w-full sm:w-auto sm:px-8 flex justify-center items-center h-12 py-1 ml-2 rounded-full hover:cursor-pointer transition hover:scale-105 duration-200 ease-in-out">
-                    <AppIcons name="add"/>
-                    <span class="mx-2 text-light flex-auto w-32">Novo Job</span>
+            <div class="flex items-center justify-end w-11/12 lg:w-full max-w-6xl h-auto mx-auto m-6">
+                <Link :href="route('admin.jobs.create')" class="flex items-start">
+                    <AppIcons name="add-job" :style="'primary'"/>
+                    <span class="mx-2 text-primary flex-auto w-32">Adicionar Job</span>
                 </Link>
             </div>
             <div class="items-center w-11/12 lg:w-full max-w-6xl h-auto mx-auto">
@@ -27,25 +20,19 @@
                         <table class="w-full text-sm rounded-2xl text-left text-light">
                             <thead class="text-xs text-light">
                             <tr>
-                                <th scope="col" class="px-6 py-3">
+                                <th scope="col" class="p-3">
                                     <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Título</span>
                                 </th>
-                                <th scope="col" class="px-6 py-3">
+                                <th scope="col" class="p-3">
                                     <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Categoria</span>
                                 </th>
 
-                                <th scope="col" class="px-6 py-3">
+                                <th scope="col" class="p-3">
                                     <span
                                         class="flex items-start text-sm font-semibold text-dark dark:text-light">Prazo</span>
                                 </th>
-                                <th scope="col" class="px-6 py-3">
-                                    <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Status</span>
-                                </th>
-
-                                <th scope="col" class="px-6 py-3">
-                                    <Link :href="route('admin.jobs.create')" class="flex items-start">
-                                        <AppIcons name="hover-add"/>
-                                    </Link>
+                                <th scope="col" class="p-3">
+                                    <span class="flex items-center justify-center text-sm font-semibold text-dark dark:text-light">Status</span>
                                 </th>
                             </tr>
                             </thead>
@@ -53,19 +40,19 @@
                             <tr v-for="job in jobs" :key="job.id"
                                 class="border-y border-line-border/30">
                                 <td>
-                                    <div class="px-4 py-2">
+                                    <div class="p-3">
                                         <span class="text-dark dark:text-light font-light">{{ job.title }}</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="px-4 py-2">
+                                    <div class="p-3">
                                         <span class="text-dark dark:text-light font-light">{{
                                                 job.job_category.name
                                             }}</span>
                                     </div>
                                 </td>
                                 <td>
-                                    <div class="px-4 py-2">
+                                    <div class="p-3">
                                         <span class="text-dark dark:text-light font-light">{{
                                                 new Intl.DateTimeFormat('pt-BR', {
                                                     day: 'numeric',
@@ -79,7 +66,7 @@
                                     <AppStatus :status="job.status"/>
                                 </td>
                                 <td>
-                                    <div class="px-4 py-2">
+                                    <div class="p-3">
                                         <Link :href="route('admin.jobs.show', [job.slug])">
                                             <span class="text-light font-light hover:cursor-pointer"><AppIcons
                                                 name="hover-eye"/></span>
