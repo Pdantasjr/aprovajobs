@@ -32,16 +32,18 @@
 import {defineComponent} from 'vue'
 
 import {Head, Link} from '@inertiajs/inertia-vue3';
+
+import AppLayout from "@/Pages/Admin/Layouts/AppLayout";
+import MainContent from "@/Pages/Admin/Layouts/MainContent";
+
 import AppInput from "@/Components/inputs/AppInput";
 import AppLabel from "@/Components/inputs/AppLabel";
 import AppValidationErrors from "@/Components/Validations/AppValidationErrors";
-import AppIcons from "../../../Components/icons/AppIcons";
-import AppTitle from "../../../Components/titles/AppTitle";
-import AppButton from "../../../Components/buttons/AppButton";
-import AppLayout from ".././Layouts/AppLayout";
-import MainContent from ".././Layouts/MainContent";
-import AppStatus from "../../../Components/status/AppStatus";
-import AppInputSearch from "../../../Components/inputs/AppInputSearch";
+import AppIcons from "@/Components/icons/AppIcons";
+import AppTitle from "@/Components/titles/AppTitle";
+import AppButton from "@/Components/buttons/AppButton";
+import AppStatus from "@/Components/status/AppStatus";
+import AppInputSearch from "@/Components/inputs/AppInputSearch";
 
 export default defineComponent({
     name: "Categories",

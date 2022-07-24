@@ -3,7 +3,7 @@
     <AppLayout>
         <MainContent>
             <div class="flex items-center w-11/12 lg:w-full max-w-6xl h-auto mt-4 mx-auto">
-                <Link :href="route('front.index')">
+                <Link :href="route('admin.categories.index')">
                     <AppIcons name="return"/>
                 </Link>
                 <AppTitle title="Categorias"/>
@@ -99,16 +99,18 @@
 import {defineComponent} from 'vue'
 
 import {Head, Link} from '@inertiajs/inertia-vue3';
+
+import AppLayout from "@/Pages/Admin/Layouts/AppLayout";
+import MainContent from "@/Pages/Admin/Layouts/MainContent";
+
 import AppLabel from "@/Components/inputs/AppLabel";
 import AppInput from "@/Components/inputs/AppInput";
 import Pagination from "@/Components/Pagination/Pagination";
-import AppIcons from "../../../Components/icons/AppIcons";
-import AppTitle from "../../../Components/titles/AppTitle";
-import AppButton from "../../../Components/buttons/AppButton";
-import AppLayout from ".././Layouts/AppLayout";
-import MainContent from ".././Layouts/MainContent";
-import AppStatus from "../../../Components/status/AppStatus";
-import AppInputSearch from "../../../Components/inputs/AppInputSearch";
+import AppIcons from "@/Components/icons/AppIcons";
+import AppTitle from "@/Components/titles/AppTitle";
+import AppButton from "@/Components/buttons/AppButton";
+import AppStatus from "@/Components/status/AppStatus";
+import AppInputSearch from "@/Components/inputs/AppInputSearch";
 import Button from "@/Jetstream/Button";
 
 export default defineComponent({

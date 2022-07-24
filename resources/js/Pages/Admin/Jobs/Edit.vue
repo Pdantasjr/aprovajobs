@@ -3,7 +3,7 @@
     <AppLayout>
         <MainContent>
             <div class="flex items-center w-11/12 lg:w-full max-w-4xl h-auto mx-auto">
-                <Link :href="route('front.index')">
+                <Link :href="route('admin.jobs.index')">
                     <AppIcons name="return"/>
                 </Link>
                 <AppTitle title="Novo job"/>
@@ -44,16 +44,18 @@
 <script>
 import {defineComponent} from 'vue'
 import {Head, Link} from '@inertiajs/inertia-vue3';
-import AppLayout from "../../../Layouts/AppLayout";
-import MainContent from "../../../Layouts/MainContent";
-import AppIcons from "../../../Components/icons/AppIcons";
-import AppTitle from "../../../Components/titles/AppTitle";
-import AppButton from "../../../Components/buttons/AppButton";
-import AppValidationErrors from "../../../Components/Validations/AppValidationErrors";
-import AppLabel from "../../../Components/inputs/AppLabel";
-import AppInput from "../../../Components/inputs/AppInput";
-import AppTextArea from "../../../Components/inputs/AppTextArea";
-import AppSelec from "../../../Components/inputs/AppSelec";
+
+import AppLayout from "@/Pages/Admin/Layouts/AppLayout";
+import MainContent from "@/Pages/Admin/Layouts/MainContent";
+
+import AppIcons from "@/Components/icons/AppIcons";
+import AppTitle from "@/Components/titles/AppTitle";
+import AppButton from "@/Components/buttons/AppButton";
+import AppValidationErrors from "@/Components/Validations/AppValidationErrors";
+import AppLabel from "@/Components/inputs/AppLabel";
+import AppInput from "@/Components/inputs/AppInput";
+import AppTextArea from "@/Components/inputs/AppTextArea";
+import AppSelec from "@/Components/inputs/AppSelec";
 
 export default defineComponent({
     name: "NewJob",

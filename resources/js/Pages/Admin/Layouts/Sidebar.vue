@@ -28,14 +28,14 @@
                 <li>
                     <ul class="text-sm space-y-4 -mx-3 mt-2">
                         <li>
-                            <Link
+                            <Link :href="route('admin.dashboard.index')"
                                   class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-clipboard"/>
                                 <span class="text-dark dark:text-light block text-sm">Dashboard</span>
                             </Link>
                         </li>
                         <li>
-                            <Link :href="route('admin.jobs.dashboard')"
+                            <Link :href="route('admin.jobs.index')"
                                 class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-puzzle"/>
                                 <span class="text-dark dark:text-light block text-sm">Jobs</span>
@@ -87,6 +87,7 @@
                 </li>
             </ul>
         </footer>
+
         <!--RECOLHIDO-->
         <header v-if="sidebarIsActive" class="w-full h-36 flex items-center justify-center mt-4 mx-auto">
             <div @click="sidebarIsActive = !sidebarIsActive"
@@ -105,13 +106,13 @@
                 <li>
                     <ul class="text-sm space-y-4 mt-2">
                         <li>
-                            <Link
+                            <Link :href="route('admin.dashboard.index')"
                                   class="flex items-center gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-clipboard"/>
                             </Link>
                         </li>
                         <li>
-                            <Link :href="route('admin.jobs.dashboard')"
+                            <Link :href="route('admin.jobs.index')"
                                 class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-puzzle"/>
                             </Link>
@@ -154,7 +155,6 @@
                 </li>
             </ul>
         </footer>
-
     </aside>
 </template>
 

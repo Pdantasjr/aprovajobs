@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\JobCategories;
 use App\Models\Jobs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
@@ -14,14 +15,16 @@ class JobsController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Admin/Dashboard',[
+        return Inertia::render('Admin/Jobs/Index',[
             'jobs' => Jobs::with('jobCategory')->orderBy('created_at', 'DESC')->get(),
         ]);
     }
 
     public function create()
     {
-        return Inertia::render('Admin/Jobs/Create');
+        return Inertia::render('Admin/Jobs/Create', [
+            "category" => JobCategories::all()
+        ]);
     }
 
     public function store(Request $request)
@@ -55,7 +58,7 @@ class JobsController extends Controller
         $job->deadline = $request->deadline;
         $job->save();
 
-        return Redirect::route('admin.jobs.dashboard')->with(['toast' => ['message' => $request->title." foi adicionado!"]]);
+        return Redirect::route('admin.jobs.index')->with(['toast' => ['message' => $request->title." foi adicionado!"]]);
     }
 
     public function show($slug) {
