@@ -20,18 +20,8 @@ class JobCategoriesController extends Controller
     public function index()
     {
         return Inertia::render('Admin/Categories/Index', [
-            'categories' => JobCategories::all()
+            'categories' => JobCategories::orderBy('id', 'DESC')->paginate(10)
         ]);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        return Inertia::render('Admin/Categories/Create');
     }
 
     /**
@@ -61,21 +51,11 @@ class JobCategoriesController extends Controller
 
         return Redirect::route('admin.categories.index')->with(['toast' => ['message' => $request->name." foi adicionado!"]]);
     }
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\JobCategories  $jobCategories
-     * @return \Illuminate\Http\Response
-     */
-    public function show(JobCategories  $jobCategories)
-    {
-
-    }
 
     public function edit($slug)
     {
         return Inertia::render('Admin/Categories/Edit', [
-            'category' => JobCategories::where('slug', $slug)
+            'category' => JobCategories::where('slug', $slug)->first()
         ]);
     }
 
@@ -86,20 +66,33 @@ class JobCategoriesController extends Controller
      * @param  \App\Models\JobCategories  $jobCategories
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, JobCategories $jobCategories)
+    public function update(Request $request, $id)
     {
-        dd($request->all(), $jobCategories);
+
+        $rules = [
+            'name' => 'required|min:3',
+        ];
+        $message = [
+            'name.required' => 'Você precisa adicionar um nome a categoria.',
+            'name.mim' => 'Você precisa adicionar ao menos três caracteres.'
+        ];
+
+        Validator::validate($request->all(), $rules, $message);
+
+        $category = JobCategories::find($id);
+
+        $category->name = $request->input('name');
+        $category->update();
+
+        return Redirect::route('admin.categories.index')->with(['toast' => ['message' => "Categoria atualizado com sucesso!"]]);
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\JobCategories  $jobCategories
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(JobCategories $jobCategories)
-    {
 
+    public function destroy($id)
+    {
+        $category = JobCategories::find($id);
+        $category->delete();
+        return Redirect::route('admin.categories.index')->with(['toast' => ['message' => "Categoria excluída com sucesso!"]]);
     }
 
     private function setSlug($name) {
