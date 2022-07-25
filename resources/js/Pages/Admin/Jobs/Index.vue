@@ -1,6 +1,7 @@
 <template>
     <Head title="Jobs"/>
     <AppLayout>
+        <toast :toast="$page.props.flash.message"></toast>
         <MainContent>
             <div class="flex items-center w-11/12 lg:w-full max-w-6xl h-auto mt-4 mx-auto">
                 <Link :href="route('admin.dashboard.index')">
@@ -94,6 +95,7 @@ import {Head, Link} from '@inertiajs/inertia-vue3';
 import AppLayout from "@/Pages/Admin/Layouts/AppLayout";
 import MainContent from "@/Pages/Admin/Layouts/MainContent";
 
+import Toast from "@/Components/Notifications/Toast";
 import AppIcons from "@/Components/icons/AppIcons";
 import AppTitle from "@/Components/titles/AppTitle";
 import AppButton from "@/Components/buttons/AppButton";
@@ -108,6 +110,7 @@ export default defineComponent({
     components: {
         AppInputSearch,
         AppStatus,
+        Toast,
         Link,
         Head,
         AppLayout,
