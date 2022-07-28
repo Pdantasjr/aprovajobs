@@ -4,10 +4,17 @@
         <!--EXPANDIDO-->
         <header v-if="!sidebarIsActive" class="p-4 w-full h-36 flex items-center justify-end mt-4 mx-auto">
             <div class="w-full h-auto block">
-                <transition>
+
+                <div v-if="!isDark">
                     <img v-if="!sidebarIsActive" class="ml-4 h-8 w-auto"
                          src="./Images/logotype/logotipo-horizontal-aprova-jobs-light-mode.svg.svg" alt="Logotipo">
-                </transition>
+                </div>
+
+                <div v-if="isDark">
+                    <img v-if="!sidebarIsActive" class="ml-4 h-8 w-auto"
+                         src="./Images/logotype/logotipo-horizontal-aprova-jobs-dark-mode.svg.svg" alt="Logotipo">
+                </div>
+
             </div>
             <div @click="sidebarIsActive = !sidebarIsActive"
                  class="flex items-center p-2 rounded-lg font-medium transition duration-300 hover:cursor-pointer hover:bg-light hover:dark:bg-dark focus:bg-light/5">
@@ -87,7 +94,7 @@
                             </button>
                         </li>
                         <li>
-                            <button
+                            <button @click="logout"
                                 class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-logout"/>
                                 <span class="text-danger block">Sair</span>
@@ -209,52 +216,18 @@ export default defineComponent({
             document.querySelector('.sidebar').classList.toggle('translate-x-full')
         },
         toggleTheme() {
+            const getThemeMode = localStorage.getItem('color-theme')
 
-            if(document.getElementById('bodyTheme').classList.contains('dark')) {
-                document.getElementById('bodyTheme').classList.add('dark')
-            } else {
+            if(getThemeMode === 'dark') {
                 document.getElementById('bodyTheme').classList.remove('dark')
-            }
-
-            if (localStorage.getItem('color-theme')) {
-                if (localStorage.getItem('color-theme') === 'light') {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                } else {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                }
+                localStorage.setItem('color-theme', 'light')
+                this.isDark = false
             } else {
-                if (document.documentElement.classList.contains('dark')) {
-                    document.documentElement.classList.remove('dark');
-                    localStorage.setItem('color-theme', 'light');
-                } else {
-                    document.documentElement.classList.add('dark');
-                    localStorage.setItem('color-theme', 'dark');
-                }
+                document.getElementById('bodyTheme').classList.add('dark')
+                localStorage.setItem('color-theme', 'dark')
+                this.isDark = true
             }
-
-
-
-            // return this.isDark = !this.isDark
-            //
-            // const isDark = localStorage.getItem('isDark')
-            // const bodyTag = document.getElementById('bodyTheme')
-            //
-            // if(isDark) {
-            //     bodyTag.classList.add('dark')
-            //     localStorage.setItem('isDark', true);
-            // } else {
-            //     bodyTag.classList.remove('dark')
-            //     localStorage.setItem('isDark', false);
-            // }
-
-            // localStorage.setItem('isDark', this.isDark);
-
         }
-    },
-    mounted() {
-        localStorage.removeItem('isDark')
     }
 })
 </script>

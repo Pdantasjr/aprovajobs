@@ -22,6 +22,8 @@ import Sidebar from "@/Pages/Admin/Layouts/Sidebar";
 
 export default defineComponent({
     name: "Dashboard",
+    props: {
+    },
     components: {
         Sidebar,
         Link,

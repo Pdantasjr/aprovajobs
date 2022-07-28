@@ -23,13 +23,7 @@ export default defineComponent({
     },
     data () {
         return {
-            isDark: true,
-        }
-    },
-    methods: {
-        toggleTheme() {
-            document.documentElement.classList.toggle('dark')
-            this.isDark = !this.isDark
+            isDark: false,
         }
     }
 })
