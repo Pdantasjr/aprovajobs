@@ -21796,9 +21796,46 @@ __webpack_require__.r(__webpack_exports__);
       document.querySelector('.sidebar').classList.toggle('translate-x-full');
     },
     toggleTheme: function toggleTheme() {
-      document.documentElement.classList.toggle('dark');
-      this.isDark = !this.isDark;
+      if (document.getElementById('bodyTheme').classList.contains('dark')) {
+        document.getElementById('bodyTheme').classList.add('dark');
+      } else {
+        document.getElementById('bodyTheme').classList.remove('dark');
+      }
+
+      if (localStorage.getItem('color-theme')) {
+        if (localStorage.getItem('color-theme') === 'light') {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        }
+      } else {
+        if (document.documentElement.classList.contains('dark')) {
+          document.documentElement.classList.remove('dark');
+          localStorage.setItem('color-theme', 'light');
+        } else {
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('color-theme', 'dark');
+        }
+      } // return this.isDark = !this.isDark
+      //
+      // const isDark = localStorage.getItem('isDark')
+      // const bodyTag = document.getElementById('bodyTheme')
+      //
+      // if(isDark) {
+      //     bodyTag.classList.add('dark')
+      //     localStorage.setItem('isDark', true);
+      // } else {
+      //     bodyTag.classList.remove('dark')
+      //     localStorage.setItem('isDark', false);
+      // }
+      // localStorage.setItem('isDark', this.isDark);
+
     }
+  },
+  mounted: function mounted() {
+    localStorage.removeItem('isDark');
   }
 }));
 

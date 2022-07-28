@@ -36,7 +36,7 @@
                         </li>
                         <li>
                             <Link :href="route('admin.jobs.index')"
-                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                                  class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-puzzle"/>
                                 <span class="text-dark dark:text-light block text-sm">Jobs</span>
                             </Link>
@@ -64,7 +64,8 @@
                             </Link>
                         </li>
                         <li>
-                            <button @click="toggleTheme" class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium group hover:bg-light hover:dark:bg-dark">
+                            <button @click="toggleTheme"
+                                    class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium group hover:bg-light hover:dark:bg-dark">
 
                                 <svg v-if="isDark" xmlns="http://www.w3.org/2000/svg"
                                      class="h-7 w-7 text-light/30 group-hover:text-light transition duration-300 ease-in-out"
@@ -72,13 +73,17 @@
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                           d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                                 </svg>
-                                <span v-if="isDark" class="text-light/30 group-hover:text-light transition duration-300 ease-in-out block">Mudar tema</span>
+                                <span v-if="isDark"
+                                      class="text-light/30 group-hover:text-light transition duration-300 ease-in-out block">Mudar tema</span>
 
                                 <svg v-if="!isDark" xmlns="http://www.w3.org/2000/svg"
-                                     class="h-7 w-7 dark:text-light/30 text-dark/30 group-hover:dark:text-light group-hover:text-dark transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                                     class="h-7 w-7 dark:text-light/30 text-dark/30 group-hover:dark:text-light group-hover:text-dark transition duration-300 ease-in-out"
+                                     fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                          d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                                 </svg>
-                                <span v-if="!isDark" class="text-dark/30 group-hover:text-dark transition duration-300 ease-in-out block">Mudar tema</span>
+                                <span v-if="!isDark"
+                                      class="text-dark/30 group-hover:text-dark transition duration-300 ease-in-out block">Mudar tema</span>
                             </button>
                         </li>
                         <li>
@@ -118,7 +123,7 @@
                         </li>
                         <li>
                             <Link :href="route('admin.jobs.index')"
-                                class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
+                                  class="flex items-center gap-3 px-3 py-4 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
                                 <AppIcons name="sidebar-puzzle"/>
                             </Link>
                         </li>
@@ -141,7 +146,8 @@
                     </Link>
                 </li>
                 <li>
-                    <button @click="toggleTheme" class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium group">
+                    <button @click="toggleTheme"
+                            class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium group">
                         <svg v-if="isDark" xmlns="http://www.w3.org/2000/svg"
                              class="h-7 w-7 text-light/30 group-hover:text-light transition duration-300 ease-in-out"
                              fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -149,8 +155,10 @@
                                   d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
                         </svg>
                         <svg v-if="!isDark" xmlns="http://www.w3.org/2000/svg"
-                             class="h-7 w-7 dark:text-light/30 text-dark/30 group-hover:dark:text-light group-hover:text-dark transition duration-300 ease-in-out" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                             class="h-7 w-7 dark:text-light/30 text-dark/30 group-hover:dark:text-light group-hover:text-dark transition duration-300 ease-in-out"
+                             fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                  d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
                         </svg>
                     </button>
                 </li>
@@ -201,9 +209,52 @@ export default defineComponent({
             document.querySelector('.sidebar').classList.toggle('translate-x-full')
         },
         toggleTheme() {
-            document.documentElement.classList.toggle('dark')
-            this.isDark = !this.isDark
+
+            if(document.getElementById('bodyTheme').classList.contains('dark')) {
+                document.getElementById('bodyTheme').classList.add('dark')
+            } else {
+                document.getElementById('bodyTheme').classList.remove('dark')
+            }
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
+            } else {
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
+            }
+
+
+
+            // return this.isDark = !this.isDark
+            //
+            // const isDark = localStorage.getItem('isDark')
+            // const bodyTag = document.getElementById('bodyTheme')
+            //
+            // if(isDark) {
+            //     bodyTag.classList.add('dark')
+            //     localStorage.setItem('isDark', true);
+            // } else {
+            //     bodyTag.classList.remove('dark')
+            //     localStorage.setItem('isDark', false);
+            // }
+
+            // localStorage.setItem('isDark', this.isDark);
+
         }
+    },
+    mounted() {
+        localStorage.removeItem('isDark')
     }
 })
 </script>
