@@ -13,7 +13,7 @@
             </div>
             <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
                 <h1 class="text-light font-semibold">Status</h1>
-                <AppSingleStatus />
+                <AppSingleStatus :status="job.status" />
             </div>
             <div class="flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto">
                 <div class="flex">
