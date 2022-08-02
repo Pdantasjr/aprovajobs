@@ -1,14 +1,16 @@
 <template>
+
     <div class="rounded-full flex w-full my-4">
-        <button class="rounded-l-full px-4 py-2 text-center flex items-center justify-center bg-primary w-full">
-            <AppIcons name="single-job-button-done"/>
-            <span class="mx-2 font-semibold text-light">Aprovado</span>
+        <button class="rounded-full px-4 py-2 mx-4 text-center flex items-center justify-center bg-primary w-full">
+            <AppIcons :style="'light'" name="single-job-button-done"/>
+            <span class="font-semibold text-light m1-1">Aprovado</span>
         </button>
-        <button class="rounded-r-full px-4 py-2 text-center flex items-center justify-center bg-warning w-full">
-            <AppIcons name="single-job-button-edit"/>
-            <span class="mx-2 font-semibold text-light">Sugerir alterações</span>
+        <button class="rounded-full px-2 py-2 text-center flex items-center justify-center bg-warning w-full">
+            <AppIcons :style="'dark'" name="single-job-button-edit"/>
+            <span class="font-semibold text-dark ml-1">Sugerir alterações</span>
         </button>
     </div>
+
 </template>
 
 <script>

@@ -42,7 +42,7 @@
                                 class="border-y border-line-border/30">
                                 <td>
                                     <div class="p-3">
-                                        <span class="text-dark dark:text-light font-light">{{ job.title }}</span>
+                                        <span class="text-dark dark:text-light font-light">{{ job.title }} - {{ job.status }}</span>
                                     </div>
                                 </td>
                                 <td>

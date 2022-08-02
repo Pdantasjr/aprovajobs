@@ -1620,6 +1620,9 @@ select {
 .justify-around {
   justify-content: space-around;
 }
+.justify-evenly {
+  justify-content: space-evenly;
+}
 .gap-6 {
   gap: 1.5rem;
 }
@@ -1719,6 +1722,10 @@ select {
 .rounded-r-full {
   border-top-right-radius: 9999px;
   border-bottom-right-radius: 9999px;
+}
+.rounded-b-full {
+  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 9999px;
 }
 .border {
   border-width: 1px;
