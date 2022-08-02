@@ -23789,7 +23789,7 @@ var _hoisted_33 = [_hoisted_32];
 var _hoisted_34 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+  d: "M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
 }, null, -1
 /* HOISTED */
 );
@@ -23799,7 +23799,7 @@ var _hoisted_35 = [_hoisted_34];
 var _hoisted_36 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M19 9l-7 7-7-7"
+  d: "M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
 }, null, -1
 /* HOISTED */
 );
@@ -23809,7 +23809,7 @@ var _hoisted_37 = [_hoisted_36];
 var _hoisted_38 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M9 5l7 7-7 7"
+  d: "M19 9l-7 7-7-7"
 }, null, -1
 /* HOISTED */
 );
@@ -23819,7 +23819,7 @@ var _hoisted_39 = [_hoisted_38];
 var _hoisted_40 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+  d: "M9 5l7 7-7 7"
 }, null, -1
 /* HOISTED */
 );
@@ -23829,12 +23829,22 @@ var _hoisted_41 = [_hoisted_40];
 var _hoisted_42 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
+  d: "M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_43 = [_hoisted_42];
+
+var _hoisted_44 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
   d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_43 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+var _hoisted_45 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   d: "M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
@@ -23842,9 +23852,9 @@ var _hoisted_43 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_44 = [_hoisted_42, _hoisted_43];
+var _hoisted_46 = [_hoisted_44, _hoisted_45];
 
-var _hoisted_45 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+var _hoisted_47 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   d: "M1 1H17M4 7H14M7 13H11",
   stroke: "currentColor",
   "stroke-width": "2",
@@ -23854,22 +23864,12 @@ var _hoisted_45 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_46 = [_hoisted_45];
-
-var _hoisted_47 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
-  "stroke-linecap": "round",
-  "stroke-linejoin": "round",
-  d: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
-}, null, -1
-/* HOISTED */
-);
-
 var _hoisted_48 = [_hoisted_47];
 
 var _hoisted_49 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
+  d: "M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"
 }, null, -1
 /* HOISTED */
 );
@@ -23879,7 +23879,7 @@ var _hoisted_50 = [_hoisted_49];
 var _hoisted_51 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+  d: "M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"
 }, null, -1
 /* HOISTED */
 );
@@ -23889,7 +23889,7 @@ var _hoisted_52 = [_hoisted_51];
 var _hoisted_53 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+  d: "M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
 }, null, -1
 /* HOISTED */
 );
@@ -23899,7 +23899,7 @@ var _hoisted_54 = [_hoisted_53];
 var _hoisted_55 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+  d: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
 }, null, -1
 /* HOISTED */
 );
@@ -23909,7 +23909,7 @@ var _hoisted_56 = [_hoisted_55];
 var _hoisted_57 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+  d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
 }, null, -1
 /* HOISTED */
 );
@@ -23929,7 +23929,7 @@ var _hoisted_60 = [_hoisted_59];
 var _hoisted_61 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+  d: "M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 }, null, -1
 /* HOISTED */
 );
@@ -23959,7 +23959,7 @@ var _hoisted_66 = [_hoisted_65];
 var _hoisted_67 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+  d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 }, null, -1
 /* HOISTED */
 );
@@ -23969,7 +23969,7 @@ var _hoisted_68 = [_hoisted_67];
 var _hoisted_69 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M4 6h16M4 12h16M4 18h16"
+  d: "M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
 }, null, -1
 /* HOISTED */
 );
@@ -23979,7 +23979,7 @@ var _hoisted_70 = [_hoisted_69];
 var _hoisted_71 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
+  d: "M4 6h16M4 12h16M4 18h16"
 }, null, -1
 /* HOISTED */
 );
@@ -23989,7 +23989,7 @@ var _hoisted_72 = [_hoisted_71];
 var _hoisted_73 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M11 19l-7-7 7-7m8 14l-7-7 7-7"
+  d: "M12 9v3m0 0v3m0-3h3m-3 0H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z"
 }, null, -1
 /* HOISTED */
 );
@@ -23999,7 +23999,7 @@ var _hoisted_74 = [_hoisted_73];
 var _hoisted_75 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
+  d: "M11 19l-7-7 7-7m8 14l-7-7 7-7"
 }, null, -1
 /* HOISTED */
 );
@@ -24009,7 +24009,7 @@ var _hoisted_76 = [_hoisted_75];
 var _hoisted_77 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
-  d: "M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+  d: "M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"
 }, null, -1
 /* HOISTED */
 );
@@ -24019,12 +24019,22 @@ var _hoisted_78 = [_hoisted_77];
 var _hoisted_79 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
+  d: "M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+}, null, -1
+/* HOISTED */
+);
+
+var _hoisted_80 = [_hoisted_79];
+
+var _hoisted_81 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
   d: "M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
 }, null, -1
 /* HOISTED */
 );
 
-var _hoisted_80 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+var _hoisted_82 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   d: "M15 12a3 3 0 11-6 0 3 3 0 016 0z"
@@ -24032,9 +24042,9 @@ var _hoisted_80 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_81 = [_hoisted_79, _hoisted_80];
+var _hoisted_83 = [_hoisted_81, _hoisted_82];
 
-var _hoisted_82 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+var _hoisted_84 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   d: "M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
@@ -24042,9 +24052,9 @@ var _hoisted_82 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_83 = [_hoisted_82];
+var _hoisted_85 = [_hoisted_84];
 
-var _hoisted_84 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+var _hoisted_86 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
   "stroke-linecap": "round",
   "stroke-linejoin": "round",
   d: "M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
@@ -24052,7 +24062,7 @@ var _hoisted_84 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElement
 /* HOISTED */
 );
 
-var _hoisted_85 = [_hoisted_84];
+var _hoisted_87 = [_hoisted_86];
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   return $props.name === 'login' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 0,
@@ -24194,9 +24204,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_33, 2
   /* CLASS */
-  )) : $props.name === 'add-job' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    key: 15
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("Dinamic"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'arrows-expand' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+    key: 15,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
     fill: "none",
@@ -24205,13 +24214,11 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_35, 2
   /* CLASS */
-  ))], 2112
-  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
-  )) : $props.name === 'arrowDown' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+  )) : $props.name === 'add-job' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     key: 16
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("Arrow accordion component"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("Dinamic"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6 mx-2 text-dark/30 dark:text-light/30"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
     fill: "none",
     viewBox: "0 0 24 24",
     stroke: "currentColor",
@@ -24220,8 +24227,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
   /* CLASS */
   ))], 2112
   /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
-  )) : $props.name === 'arrowRight' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
-    key: 17,
+  )) : $props.name === 'arrowDown' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    key: 17
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("Arrow accordion component"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6 mx-2 text-dark/30 dark:text-light/30"]),
     fill: "none",
@@ -24230,8 +24238,20 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_39, 2
   /* CLASS */
+  ))], 2112
+  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+  )) : $props.name === 'arrowRight' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+    key: 18,
+    xmlns: "http://www.w3.org/2000/svg",
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6 mx-2 text-dark/30 dark:text-light/30"]),
+    fill: "none",
+    viewBox: "0 0 24 24",
+    stroke: "currentColor",
+    "stroke-width": "2"
+  }, _hoisted_41, 2
+  /* CLASS */
   )) : $props.name === 'hover-add' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    key: 18
+    key: 19
   }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("HOVER"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6 hover:cursor-pointer hover:text-dark/30 hover:dark:text-light/30 transition-all duration-200 ease-in-out"]),
@@ -24239,53 +24259,41 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     viewBox: "0 0 24 24",
     stroke: "currentColor",
     "stroke-width": "2"
-  }, _hoisted_41, 2
+  }, _hoisted_43, 2
   /* CLASS */
   ))], 2112
   /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
   )) : $props.name === 'hover-eye' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
-    key: 19,
+    key: 20,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6 text-dark/30 dark:text-light/30 dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out"]),
     fill: "none",
     viewBox: "0 0 24 24",
     stroke: "currentColor",
     "stroke-width": "2"
-  }, _hoisted_44, 2
+  }, _hoisted_46, 2
   /* CLASS */
   )) : $props.name === 'hover-filter' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
-    key: 20,
+    key: 21,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-5 w-5 text-dark/30 dark:text-light/30 dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out"]),
     viewBox: "0 0 18 14",
     fill: "none"
-  }, _hoisted_46, 2
-  /* CLASS */
-  )) : $props.name === 'hover-change-theme' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
-    key: 21,
-    xmlns: "http://www.w3.org/2000/svg",
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6 text-dark/30 dark:text-light/30 dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out"]),
-    fill: "none",
-    viewBox: "0 0 24 24",
-    stroke: "currentColor",
-    "stroke-width": "2"
   }, _hoisted_48, 2
   /* CLASS */
-  )) : $props.name === 'status-archived' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    key: 22
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("STATUS"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'hover-change-theme' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+    key: 22,
     xmlns: "http://www.w3.org/2000/svg",
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6 text-dark/30 dark:text-light/30 dark:hover:text-light hover:text-dark transition-all duration-200 ease-in-out"]),
     fill: "none",
     viewBox: "0 0 24 24",
     stroke: "currentColor",
     "stroke-width": "2"
   }, _hoisted_50, 2
   /* CLASS */
-  ))], 2112
-  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
-  )) : $props.name === 'status-analysis' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
-    key: 23,
+  )) : $props.name === 'status-archived' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    key: 23
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("STATUS"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
     fill: "none",
@@ -24294,7 +24302,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_52, 2
   /* CLASS */
-  )) : $props.name === 'status-daley' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  ))], 2112
+  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+  )) : $props.name === 'status-analysis' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 24,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
@@ -24304,7 +24314,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_54, 2
   /* CLASS */
-  )) : $props.name === 'status-production' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'status-daley' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 25,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
@@ -24314,7 +24324,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_56, 2
   /* CLASS */
-  )) : $props.name === 'status-change' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'status-production' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 26,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
@@ -24324,7 +24334,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_58, 2
   /* CLASS */
-  )) : $props.name === 'status-pendent' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'status-change' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 27,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
@@ -24334,7 +24344,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_60, 2
   /* CLASS */
-  )) : $props.name === 'status-approved' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'status-pendent' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 28,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
@@ -24344,7 +24354,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_62, 2
   /* CLASS */
-  )) : $props.name === 'status-done' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'status-approved' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 29,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
@@ -24354,9 +24364,8 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_64, 2
   /* CLASS */
-  )) : $props.name === 'single-job-button-done' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    key: 30
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("SINGLE JOB"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'status-done' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+    key: 30,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
     fill: "none",
@@ -24365,10 +24374,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_66, 2
   /* CLASS */
-  ))], 2112
-  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
-  )) : $props.name === 'single-job-button-edit' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
-    key: 31,
+  )) : $props.name === 'single-job-button-done' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    key: 31
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("SINGLE JOB"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
     fill: "none",
@@ -24377,21 +24385,21 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_68, 2
   /* CLASS */
-  )) : $props.name === 'sidebar-burger' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
-    key: 32
-  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("SIDEBAR"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  ))], 2112
+  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+  )) : $props.name === 'single-job-button-edit' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+    key: 32,
     xmlns: "http://www.w3.org/2000/svg",
-    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-6 w-6"]),
     fill: "none",
     viewBox: "0 0 24 24",
     stroke: "currentColor",
     "stroke-width": "2"
   }, _hoisted_70, 2
   /* CLASS */
-  ))], 2112
-  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
-  )) : $props.name === 'sidebar-add' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
-    key: 33,
+  )) : $props.name === 'sidebar-burger' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)(vue__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
+    key: 33
+  }, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("SIDEBAR"), ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
     fill: "none",
@@ -24400,7 +24408,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_72, 2
   /* CLASS */
-  )) : $props.name === 'sidebar-collapse' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  ))], 2112
+  /* STABLE_FRAGMENT, DEV_ROOT_FRAGMENT */
+  )) : $props.name === 'sidebar-add' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 34,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
@@ -24410,7 +24420,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_74, 2
   /* CLASS */
-  )) : $props.name === 'sidebar-clipboard' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'sidebar-collapse' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 35,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
@@ -24420,7 +24430,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_76, 2
   /* CLASS */
-  )) : $props.name === 'sidebar-edit' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'sidebar-clipboard' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 36,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
@@ -24430,7 +24440,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_78, 2
   /* CLASS */
-  )) : $props.name === 'sidebar-config' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'sidebar-edit' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 37,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
@@ -24438,9 +24448,9 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     viewBox: "0 0 24 24",
     stroke: "currentColor",
     "stroke-width": "2"
-  }, _hoisted_81, 2
+  }, _hoisted_80, 2
   /* CLASS */
-  )) : $props.name === 'sidebar-logout' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'sidebar-config' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 38,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
@@ -24450,7 +24460,7 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     "stroke-width": "2"
   }, _hoisted_83, 2
   /* CLASS */
-  )) : $props.name === 'sidebar-puzzle' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+  )) : $props.name === 'sidebar-logout' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
     key: 39,
     xmlns: "http://www.w3.org/2000/svg",
     "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
@@ -24459,6 +24469,16 @@ function render(_ctx, _cache, $props, $setup, $data, $options) {
     stroke: "currentColor",
     "stroke-width": "2"
   }, _hoisted_85, 2
+  /* CLASS */
+  )) : $props.name === 'sidebar-puzzle' ? ((0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementBlock)("svg", {
+    key: 40,
+    xmlns: "http://www.w3.org/2000/svg",
+    "class": (0,vue__WEBPACK_IMPORTED_MODULE_0__.normalizeClass)([$options.color, "h-7 w-7"]),
+    fill: "none",
+    viewBox: "0 0 24 24",
+    stroke: "currentColor",
+    "stroke-width": "2"
+  }, _hoisted_87, 2
   /* CLASS */
   )) : (0,vue__WEBPACK_IMPORTED_MODULE_0__.createCommentVNode)("v-if", true);
 }
@@ -27440,15 +27460,28 @@ var _hoisted_5 = {
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
   "class": "flex justify-center flex-col w-11/12 lg:w-full max-w-4xl h-auto mt-6 mx-auto"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "flex"
+  "class": "flex flex-col"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "flex-1"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
-  "class": "w-full h-auto rounded-lg shadow-lg",
+  "class": "w-full relative"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
+  "class": "absolute group flex items-center justify-center w-full h-full rounded-lg hover:bg-primary/70 hover:backdrop-blur-sm hover:cursor-pointer transition duration-200 ease-in-out"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("svg", {
+  xmlns: "http://www.w3.org/2000/svg",
+  "class": "h-12 w-12 text-light hidden group-hover:block transition duration-200 ease-in-out",
+  fill: "none",
+  viewBox: "0 0 24 24",
+  stroke: "currentColor",
+  "stroke-width": "2"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  d: "M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4"
+})])]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("img", {
+  "class": "w-full h-auto max-h-96 rounded-lg shadow-lg object-cover",
   src: "data:image/jpeg;base64,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",
   alt: ""
 })]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("div", {
-  "class": "flex-1 p-4"
+  "class": "p-4"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("h3", {
   "class": "text-dark dark:text-light mx-4 font-semibold"
 }, "Legenda:"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("p", {
