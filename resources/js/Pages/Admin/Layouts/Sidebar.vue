@@ -24,11 +24,11 @@
         <nav v-if="!sidebarIsActive" class="flex-1 overflow-y-auto py-2">
             <transition name="slide-fade">
                 <div class="flex items-center justify-center my-4">
-                    <button
+                    <Link :href="route('admin.jobs.create')"
                         class="bg-primary w-auto w-10/12 flex justify-center mx-2 items-center h-12 rounded-full hover:cursor-pointer transition duration-200 ease-in-out hover:scale-105">
-                        <AppIcons name="sidebar-add"/>
+                        <AppIcons :style="'light'" name="sidebar-add"/>
                         <span class="block mx-2 text-light">Adicionar Job</span>
-                    </button>
+                    </Link>
                 </div>
             </transition>
             <ul class="space-y-6 px-6 w-full mt-14">
@@ -96,7 +96,7 @@
                         <li>
                             <button @click="logout"
                                 class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
-                                <AppIcons name="sidebar-logout"/>
+                                <AppIcons :style="'danger'" name="sidebar-logout"/>
                                 <span class="text-danger block">Sair</span>
                             </button>
                         </li>
@@ -114,10 +114,10 @@
         </header>
         <nav v-if="sidebarIsActive" class="flex-1 overflow-y-auto py-2">
             <div class="flex items-center justify-center my-4">
-                <button
+                <Link :href="route('admin.jobs.create')"
                     class="bg-primary w-12 flex justify-center mx-2 items-center h-12 rounded-full hover:cursor-pointer transition duration-200 ease-in-out hover:scale-105">
-                    <AppIcons name="sidebar-add"/>
-                </button>
+                    <AppIcons :style="'light'" name="sidebar-add"/>
+                </Link>
             </div>
             <ul class="space-y-6 px-6 w-full mt-14">
                 <li>
@@ -173,7 +173,7 @@
                     <button
                         @click="logout"
                         class="flex items-center w-full gap-3 px-3 py-2 rounded-lg font-medium transition duration-300 hover:bg-light hover:dark:bg-dark focus:bg-light/5">
-                        <AppIcons name="sidebar-logout"/>
+                        <AppIcons :style="'danger'" name="sidebar-logout"/>
                     </button>
                 </li>
             </ul>

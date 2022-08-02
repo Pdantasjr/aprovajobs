@@ -10,7 +10,8 @@
             </div>
             <div class="w-11/12 lg:w-full max-w-6xl h-auto mx-auto">
 
-                <form class="flex items-center justify-center lg:w-full h-auto mx-auto mt-6 mb-8" @submit.prevent="submit">
+                <form class="flex items-center justify-center lg:w-full h-auto mx-auto mt-6 mb-8"
+                      @submit.prevent="submit">
                     <div>
                         <AppLabel text="Adicionar categoria:" for-input="name" required/>
                     </div>
@@ -31,17 +32,19 @@
                     <div class="relative overflow-x-auto shadow-md rounded-2xl border border-line-border/30">
                         <table class="w-full text-sm rounded-2xl text-left text-light">
                             <thead class="text-xs text-light">
-                                <tr>
-                                    <th scope="col" class="px-6 py-3">
-                                        <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Nome</span>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Cadastrado em</span>
-                                    </th>
-                                    <th scope="col" class="px-6 py-3">
-                                        <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Ações</span>
-                                    </th>
-                                </tr>
+                            <tr>
+                                <th scope="col" class="px-6 py-3">
+                                    <span
+                                        class="flex items-start text-sm font-semibold text-dark dark:text-light">Nome</span>
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    <span class="flex items-start text-sm font-semibold text-dark dark:text-light">Cadastrado em</span>
+                                </th>
+                                <th scope="col" class="px-6 py-3">
+                                    <span
+                                        class="flex items-start text-sm font-semibold text-dark dark:text-light">Ações</span>
+                                </th>
+                            </tr>
                             </thead>
                             <tbody class="divide-y whitespace-nowrap rounded-lg">
                             <tr v-for="category in categories.data" :key="category.id"
@@ -66,8 +69,12 @@
                                 <td>
                                     <div class="px-4 py-2">
                                         <div class=" flex justify-around items-center w-20">
-                                            <Link class="mx-2" :href="route('admin.categories.edit', [category.slug])" ><AppIcons name="edit" /> </Link>
-                                            <button @click="catDelete(category.id, category.name)" class="mx-2" ><AppIcons name="trash" /> </button>
+                                            <Link class="mx-2" :href="route('admin.categories.edit', [category.slug])">
+                                                <AppIcons name="edit"/>
+                                            </Link>
+                                            <button @click="catDelete(category.id, category.name)" class="mx-2">
+                                                <AppIcons name="trash"/>
+                                            </button>
                                         </div>
                                     </div>
                                 </td>

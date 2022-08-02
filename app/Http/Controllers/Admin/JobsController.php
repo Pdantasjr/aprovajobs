@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use App\Models\JobCategories;
 use App\Models\Jobs;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
@@ -29,6 +30,19 @@ class JobsController extends Controller
 
     public function store(Request $request)
     {
+        $dateNow = Carbon::createFromFormat('Y-m-d', $request->deadline);
+        $dateNow->now();
+
+        $dateNew = Carbon::createFromFormat('Y-m-d', $request->deadline);
+        $dateNew->add(5, 'day');
+
+        $time
+
+        dd($request->deadline, $dateNow, $dateNew, ($dateNow == $dateNew));
+
+
+
+
         $rules = [
             'title' => 'required|min:3',
             'description' => 'required|min:5',
