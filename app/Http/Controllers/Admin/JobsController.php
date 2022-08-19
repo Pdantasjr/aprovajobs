@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\JobCategories;
 use App\Models\Jobs;
 use Carbon\Carbon;
+use DateTime;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
@@ -16,7 +17,7 @@ class JobsController extends Controller
 {
     public function index()
     {
-        return Inertia::render('Admin/Jobs/Index',[
+        return Inertia::render('Admin/Jobs/Index', [
             'jobs' => Jobs::with('jobCategory')->orderBy('created_at', 'DESC')->get(),
         ]);
     }
@@ -30,17 +31,37 @@ class JobsController extends Controller
 
     public function store(Request $request)
     {
-        $dateNow = Carbon::createFromFormat('Y-m-d', $request->deadline);
-        $dateNow->now();
-
-        $dateNew = Carbon::createFromFormat('Y-m-d', $request->deadline);
-        $dateNew->add(5, 'day');
-
-        $time
-
-        dd($request->deadline, $dateNow, $dateNew, ($dateNow == $dateNew));
+//        $date = Carbon::now('America/Sao_Paulo');
+//        $dateScheduling = Carbon::createFromFormat('Y-m-d', $request->deadline)->tz('America/Sao_Paulo');
+//
+//        $deadline = $date->diffInDays($dateScheduling, false);
+////        $dateNew = Carbon::createFromFormat('Y-m-d', $request->deadline);
+//
 
 
+        $now = Carbon::now('America/Sao_Paulo');
+//        $now = Carbon::parse($request->deadline)->tz('America/Sao_Paulo');
+        $deadline = Carbon::parse('H:m:s', 'America/Sao_Paulo');
+//        $weekStartDate = $now->startOfWeek()->format('d-m-Y H:m');
+//        $weekEndDate = $now->endOfWeek()->format('d-m-Y H:m');
+        $difference = $now->diffInHours($deadline);
+        $sat = $now->isSaturday();
+        $sun = $now->isSunday();
+
+        if ($difference < 2) {
+            echo "Não há tempo hábio para conclusão do job";
+        }
+
+        dd(
+            "Data de hoje:",
+            $now,
+            "Data Limite:",
+            $deadline,
+            "Diferença dos dias:",
+            $difference,
+            $sat,
+            $sun,
+        );
 
 
         $rules = [
@@ -72,16 +93,18 @@ class JobsController extends Controller
         $job->deadline = $request->deadline;
         $job->save();
 
-        return Redirect::route('admin.jobs.index')->with(['toast' => ['message' => $request->title." foi adicionado!"]]);
+        return Redirect::route('admin.jobs.index')->with(['toast' => ['message' => $request->title . " foi adicionado!"]]);
     }
 
-    public function show($slug) {
+    public function show($slug)
+    {
         return Inertia::render('Admin/Jobs/Show', [
             'job' => Jobs::where('slug', $slug)->with('jobCategory')->first(),
         ]);
     }
 
-    private function setSlug($job) {
+    private function setSlug($job)
+    {
         $titleSlug = Str::slug($job);
 
         $query = Jobs::all();
